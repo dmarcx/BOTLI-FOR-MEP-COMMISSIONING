@@ -127,7 +127,7 @@ if room:
                             if st.checkbox("האם השילוט בפועל תואם לתכנון?"):
                                 if st.checkbox("""האם האור כבה לאחר הפעלת מאמ"ת?"""):
                                     st.success("בדיקת התאורה הסתיימה בהצלחה.")
-                                    if st.button("📄 הפק דו"ח מסירה"):
+                                    if st.button("""📄 הפק דו"ח מסירה"""):
                                         file = generate_report(room, room_type, planned, today, status, lux_result, sources)
                                         with open(file, "rb") as f:
                                             st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
