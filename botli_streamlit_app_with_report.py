@@ -89,4 +89,33 @@ def evaluate_lux(room_type, measured_lux):
     else:
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
 
-# (...the rest of the code remains unchanged...)
+# Streamlit UI
+st.title("BOTLI – בדיקת תאורה")
+
+room = st.text_input("הזן מספר חדר (לדוגמה L3001):")
+if room:
+    room = room.upper().strip()
+    if len(room) == 5 and room[0] in ["L", "P"] and room[1:].isdigit():
+        room_type, error = get_room_type(room)
+        if error:
+            st.error(error)
+        else:
+            st.success(f"הבדיקה מתבצעת על חדר מספר {room} מסוג {room_type}.")
+            if check_documents(room):
+                st.info("כל המסמכים הוגשו.")
+                planned, today, status = get_schedule_date(room)
+                st.write(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
+                if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
+                    if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
+                        measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
+                        if measured:
+                            lux_result = evaluate_lux(room_type, measured)
+                            st.info(lux_result)
+                    else:
+                        st.warning("נדרש מד תאורה לביצוע הבדיקה.")
+                else:
+                    st.warning("לא ניתן להמשיך ללא אישור התקדמות.")
+            else:
+                st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
+    else:
+        st.error("מספר החדר אינו תקני. יש להזין קלט במבנה L1234 או P1234.")
