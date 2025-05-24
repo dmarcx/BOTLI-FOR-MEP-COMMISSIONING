@@ -124,13 +124,13 @@ if room:
 
                         st.markdown("👥 **מי המשתתפים בבדיקה ומה תפקידם?**")
                         participants_list = []
-                        while True:
+                        add_more = True
+                        while add_more:
                             new_participant = st.text_input("שם – תפקיד", key=f"participant_{len(participants_list)}")
                             if new_participant:
                                 participants_list.append(new_participant)
-                            done = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants_list)}")
-                            if done == "כן":
-                                break
+                                if st.radio("האם להוסיף משתתף נוסף?", ("לא", "כן"), key=f"add_more_{len(participants_list)}") == "לא":
+                                    add_more = False
 
                         participants = "\n".join(participants_list)
                         if not participants.strip():
