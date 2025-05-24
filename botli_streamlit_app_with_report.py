@@ -94,6 +94,19 @@ def evaluate_lux(room_type, measured_lux):
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
 
 
+def get_power_sources(room):
+    if room.startswith("L"):
+        file_name = "SLD1-L3-EL-001.pdf"
+    elif room.startswith("P"):
+        file_name = f"SLD1-P{room[1]}-001.pdf"
+    else:
+        return []
+    if not os.path.exists(file_name):
+        return []
+    doc = fitz.open(file_name)
+    text = "".join([page.get_text() for page in doc])
+    return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
+
 # Streamlit UI
 st.title("BOTLI – בדיקת תאורה")
 
@@ -145,6 +158,21 @@ if room:
                                         st.warning("באזור החשוך: " + dark_result)
                                     else:
                                         st.info("באזור החשוך: " + dark_result)
+
+                        # בדיקת מקורות אספקה ושילוט
+                        sources = get_power_sources(room)
+                        st.markdown("### ⚡ מקורות אספקה שנמצאו בתוכנית:")
+                        if sources:
+                            for s in sources:
+                                st.write(f"🔌 {s}")
+                        else:
+                            st.write("לא נמצאו מקורות אספקה.")
+
+                        signage_match = st.checkbox("האם השילוט בפועל תואם לתכנון?")
+                        if signage_match:
+                            st.success("השילוט תואם לתכנון.")
+                        else:
+                            st.warning("נדרש לתקן את השילוט או לעדכן את התכנון.")
                     else:
                         st.warning("נדרש מד תאורה לביצוע הבדיקה.")
                 else:
