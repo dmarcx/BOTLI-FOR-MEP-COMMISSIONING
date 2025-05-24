@@ -73,11 +73,13 @@ def get_power_sources(room):
         file_name = f"SLD1-P{room[1]}-001.pdf"
     else:
         return []
+    if not os.path.exists(file_name):
+        return []
     doc = fitz.open(file_name)
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
 
-def generate_report(room, room_type, planned, today, status, lux_result, sources):
+def generate_report(room, room_type, planned, today, status, lux_result, sources, participants, dark_measured=None, dark_measured=dark_measured if darker_area == "כן" else None):
     wb = load_workbook("דוח מסירה.xlsx")
     ws = wb.active
     ws["A1"] = f"{room} - {room_type}"
@@ -87,58 +89,9 @@ def generate_report(room, room_type, planned, today, status, lux_result, sources
     ws["B6"] = "✓"
     ws["B7"] = "✓"
     ws["B8"] = "✓"
+    ws["B9"] = participants.replace("–", ":").replace("\n", "; ")
     ws["B22"] = "בדיקת תאורה"
     ws["C22"] = lux_result
     ws["B34"] = ", ".join(sources)
-    output_path = f"report_{room}.xlsx"
-    wb.save(output_path)
-    return output_path
-
-# Streamlit UI
-st.title("BOTLI – בדיקת תאורה")
-
-room = st.text_input("הזן מספר חדר (לדוגמה L3001):")
-if room:
-    room = room.upper().strip()
-    if len(room) == 5 and room[0] in ["L", "P"] and room[1:].isdigit():
-        room_type, error = get_room_type(room)
-        if error:
-            st.error(error)
-        else:
-            st.success(f"הבדיקה מתבצעת על חדר מספר {room} מסוג {room_type}.")
-
-            if check_documents(room):
-                st.info("כל המסמכים הוגשו.")
-                planned, today, status = get_schedule_date(room)
-                st.write(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
-
-                if st.checkbox("""האם ניתן להתקדם לביצוע הבדיקה בפועל?"""):
-                    if st.checkbox("""האם קיים מד תאורה זמין לביצוע הבדיקה?"""):
-                        st.markdown("""📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס"מ. ודא שאין אור חיצוני שמפריע.""")
-                        measured = st.number_input("""הזן את רמת ההארה שנמדדה (בלוקס):""", min_value=0)
-                        if measured:
-                            lux_result = evaluate_lux(room_type, measured)
-                            st.info(lux_result)
-                            sources = get_power_sources(room)
-                            st.write("""מקורות אספקה שנמצאו בתוכנית:""")
-                            for s in sources:
-                                st.write(f"🔌 {s}")
-                            if st.checkbox("""האם השילוט בפועל תואם לתכנון?"""):
-                                if st.checkbox("""האם האור כבה לאחר הפלת מאמ"ת?"""):
-                                    st.success("""בדיקת התאורה הסתיימה בהצלחה.""")
-                                    if st.button("""📄 הפק דו"ח מסירה"""):
-                                        file = generate_report(room, room_type, planned, today, status, lux_result, sources)
-                                        with open(file, "rb") as f:
-                                            st.download_button("""📥 הורד את הדו"ח""", data=f, file_name=file)
-                                else:
-                                    st.warning("""נדרש לאמת את הפעלת מאמ"ת.""")
-                            else:
-                                st.warning("""נדרש לתקן את השילוט או לעדכן את התכנון.""")
-                    else:
-                        st.stop()
-                else:
-                    st.stop()
-            else:
-                st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
-    else:
-        st.error("הקלט שסופק אינו כולל אות אחת ואחריה 4 ספרות. לא ניתן להמשיך.")
+    if dark_measured is not None:
+        ws["C23"] = f"{dark_measured} לוקס באזור חשוך"
