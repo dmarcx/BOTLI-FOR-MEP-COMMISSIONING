@@ -19,7 +19,7 @@ def get_room_type(room):
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None, "Room not found"
-    room_type = row.iloc[0].get("Type of Room", "").strip()
+    room_type = row.iloc[0].get("Type of room", "").strip()
     return room_type, None if room_type else "Room type missing"
 
 def check_documents(room):
