@@ -14,6 +14,7 @@ def load_data():
 
 above_ground, below_ground = load_data()
 
+
 def get_room_type(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
@@ -36,12 +37,14 @@ def get_room_type(room):
 
     return room_type, None if room_type else "Room type missing"
 
+
 def check_documents(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None
     return row.iloc[0].get("מסמכים סופקו", "").strip() == "כן"
+
 
 def get_schedule_date(room):
     df = above_ground if room.startswith("L") else below_ground
@@ -61,6 +64,7 @@ def get_schedule_date(room):
     else:
         status = f"מוקדמת ב־{abs(delta)} ימים"
     return planned_date, today, status
+
 
 def evaluate_lux(room_type, measured_lux):
     lux_table = {
@@ -89,6 +93,7 @@ def evaluate_lux(room_type, measured_lux):
     else:
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
 
+
 # Streamlit UI
 st.title("BOTLI – בדיקת תאורה")
 
@@ -107,6 +112,22 @@ if room:
                 st.write(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
                 if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
                     if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
+                        participants = []
+                        st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
+                        participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
+                        if participants_text.strip():
+                            participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
+                            more = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"))
+                            while more == "לא":
+                                additional = st.text_area("הוסף משתתפים נוספים בפורמט שם – תפקיד, שורה לכל משתתף")
+                                if additional.strip():
+                                    participants += [line.strip() for line in additional.splitlines() if line.strip()]
+                                    more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"))
+
+                        if not participants:
+                            st.warning("נדרשת רשימת משתתפים להמשך.")
+                            st.stop()
+
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                         if measured:
                             lux_result = evaluate_lux(room_type, measured)
