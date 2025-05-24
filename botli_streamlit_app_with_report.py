@@ -168,7 +168,7 @@ if room:
                         else:
                             st.warning("נדרש לאמת את פעולת המאמת.")
 
-                        if st.button("📄 הפק דו"ח מסירה"):
+                        if st.button('📄 הפק דו"ח מסירה'):
                             st.info("דו"ח נוצר בהצלחה. (כאן תשתלב פונקציית הפקת הדו"ח בפועל)")
                     else:
                         st.warning("נדרש מד תאורה לביצוע הבדיקה.")
