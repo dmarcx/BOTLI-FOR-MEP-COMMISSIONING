@@ -155,10 +155,15 @@ if room:
 
                     # בדיקת גופי תאורה מתבצעת כאן
                     fixtures = get_lighting_fixtures(room)
-                    st.subheader("💡 בדיקת גופי תאורה")
+                    st.subheader("\U0001F4A1 בדיקת גופי תאורה")
                     for fixture in fixtures:
                         st.info(fixture)
                     confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
+
+                    if confirm == "לא":
+                        manual_fixtures = st.text_area("אנא הזן את סוגי הגופים והכמויות כפי שנמצאו בפועל (שורה לכל פריט)")
+                        if manual_fixtures.strip():
+                            fixtures = [line.strip() for line in manual_fixtures.splitlines() if line.strip()]
 
                     # משתתפים
                     participants = []
