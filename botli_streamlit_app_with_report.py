@@ -102,6 +102,21 @@ def get_power_sources(room):
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
 
+def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants):
+    wb = load_workbook("דוח מסירה.xlsx")
+    ws = wb.active
+    ws["A1"] = f"חדר {room} ({room_type})"
+    ws["B3"] = str(planned)
+    ws["B4"] = str(today)
+    ws["C4"] = status
+    ws["B8"] = lux_result
+    ws["B9"] = dark_result if dark_result else "לא נמדד"
+    ws["B10"] = ", ".join(sources)
+    ws["B11"] = "; ".join(participants)
+    file_name = f"report_{room}.xlsx"
+    wb.save(file_name)
+    return file_name
+
 # Streamlit UI
 st.title("BOTLI – בדיקת תאורה")
 
@@ -127,11 +142,10 @@ if room:
                             participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
                             more = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"))
                             while more == "לא":
-                                additional = st.text_area("הוסף משתתפים נוספים בפורמט שם – תפקיד, שורה לכל משתתף")
+                                additional = st.text_area("הוסף משתתפים נוספים", key=f"more_{len(participants)}")
                                 if additional.strip():
                                     participants += [line.strip() for line in additional.splitlines() if line.strip()]
-                                    more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"))
-
+                                    more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
                         if not participants:
                             st.warning("נדרשת רשימת משתתפים להמשך.")
                             st.stop()
@@ -141,6 +155,7 @@ if room:
                             lux_result = evaluate_lux(room_type, measured)
                             st.info(lux_result)
 
+                            dark_result = ""
                             darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
                             if darker_area == "כן":
                                 dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
@@ -164,12 +179,14 @@ if room:
 
                         breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ("כן", "לא"))
                         if breaker_test == "כן":
-                            st.success("בדיקת הפסקת האור לאחר הפלת המאמת עברה בהצלחה.")
+                            st.success("המאמת פועל כמצופה.")
                         else:
                             st.warning("נדרש לאמת את פעולת המאמת.")
 
                         if st.button("📄 הפק דו"ח מסירה"):
-                            st.info("דו"ח נוצר בהצלחה. (כאן תשתלב פונקציית הפקת הדו"ח בפועל)")
+                            file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants)
+                            with open(file, "rb") as f:
+                                st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
                     else:
                         st.warning("נדרש מד תאורה לביצוע הבדיקה.")
                 else:
