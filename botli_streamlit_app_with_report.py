@@ -128,7 +128,6 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     wb.save(file_name)
     return file_name
 
-# Streamlit UI
 st.title("BOTLI – בדיקת תאורה")
 room = st.text_input("הזן מספר חדר (לדוגמה L3001):")
 if room:
@@ -150,6 +149,13 @@ if room:
             if proceed == "כן":
                 light_meter = st.radio("האם קיים מד תאורה זמין לביצוע הבדיקה?", ["לא", "כן"])
                 if light_meter == "כן":
+                    st.subheader("👬 מי המשתתפים בבדיקה ומה תפקידם?")
+                    participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
+                    participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
+                    if not participants:
+                        st.warning("נדרשת רשימת משתתפים להמשך.")
+                        st.stop()
+
                     st.subheader("💡 בדיקת גופי תאורה")
                     fixtures = get_lighting_fixtures(room)
                     for fix in fixtures:
@@ -161,13 +167,6 @@ if room:
                         if actual:
                             remarks += actual.splitlines()
                             st.success("הרשימה עודכנה בהצלחה.")
-
-                    st.subheader("👬 מי המשתתפים בבדיקה ומה תפקידם?")
-                    participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
-                    participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
-                    if not participants:
-                        st.warning("נדרשת רשימת משתתפים להמשך.")
-                        st.stop()
 
                     measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                     if measured:
