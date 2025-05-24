@@ -27,7 +27,7 @@ def check_documents(room):
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None
-    return row.iloc[0].get("Documents Supplied", "").strip() == "כן"
+    return row.iloc[0].get("מסמכים סופקו", "").strip() == "כן"
 
 def get_schedule_date(room):
     df = above_ground if room.startswith("L") else below_ground
