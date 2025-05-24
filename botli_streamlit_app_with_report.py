@@ -14,7 +14,6 @@ def load_data():
 
 above_ground, below_ground = load_data()
 
-
 def get_room_type(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
@@ -37,14 +36,12 @@ def get_room_type(room):
 
     return room_type, None if room_type else "Room type missing"
 
-
 def check_documents(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None
     return row.iloc[0].get("מסמכים סופקו", "").strip() == "כן"
-
 
 def get_schedule_date(room):
     df = above_ground if room.startswith("L") else below_ground
@@ -64,7 +61,6 @@ def get_schedule_date(room):
     else:
         status = f"מוקדמת ב‏{abs(delta)} ימים"
     return planned_date, today, status
-
 
 def evaluate_lux(room_type, measured_lux):
     lux_table = {
@@ -93,7 +89,6 @@ def evaluate_lux(room_type, measured_lux):
     else:
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
 
-
 def get_power_sources(room):
     if room.startswith("L"):
         file_name = "SLD1-L3-EL-001.pdf"
@@ -106,7 +101,6 @@ def get_power_sources(room):
     doc = fitz.open(file_name)
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
-
 
 def get_lighting_fixtures(room):
     df = above_ground if room.startswith("L") else below_ground
@@ -121,7 +115,6 @@ def get_lighting_fixtures(room):
         if type_c or model_d:
             fixtures.append(f"{type_c} {model_d}\nכמות: {quantity_e}")
     return fixtures if fixtures else ["לא צויין"]
-
 
 def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks):
     wb = load_workbook("דוח מסירה.xlsx")
@@ -142,28 +135,33 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     wb.save(file_name)
     return file_name
 
-
-# Streamlit UI integration for fixture validation
+# Streamlit UI integration
 room = st.text_input("הזן מספר חדר")
 if room:
     room = room.upper().strip()
+    if check_documents(room):
+        planned, today, status = get_schedule_date(room)
+        st.info(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
 
-    # בדיקת גופי תאורה תתבצע לאחר הכנסת משתתפים
-    participants = []
-    st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
-    participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
-    if participants_text.strip():
-        participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
-        more = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"))
-        while more == "לא":
-            additional = st.text_area("הוסף משתתפים נוספים", key=f"more_{len(participants)}")
-            if additional.strip():
-                participants += [line.strip() for line in additional.splitlines() if line.strip()]
-                more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
+        if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
+            if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
 
-        # שלב בדיקת גופי התאורה לאחר הזנת המשתתפים
-        fixtures = get_lighting_fixtures(room)
-        st.subheader("💡 בדיקת גופי תאורה")
-        for fixture in fixtures:
-            st.info(fixture)
-        confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
+                # בדיקת גופי תאורה מתבצעת כאן
+                fixtures = get_lighting_fixtures(room)
+                st.subheader("💡 בדיקת גופי תאורה")
+                for fixture in fixtures:
+                    st.info(fixture)
+                confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
+
+                # משתתפים
+                participants = []
+                st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
+                participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
+                if participants_text.strip():
+                    participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
+                    more = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"))
+                    while more == "לא":
+                        additional = st.text_area("הוסף משתתפים נוספים", key=f"more_{len(participants)}")
+                        if additional.strip():
+                            participants += [line.strip() for line in additional.splitlines() if line.strip()]
+                            more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
