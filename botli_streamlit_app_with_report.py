@@ -24,6 +24,7 @@ def get_room_type(room):
     # Normalize known room type synonyms
     synonyms = {
         "MEETING ROOM": "חדר ישיבות",
+        "MEETINGROOM": "חדר ישיבות",
         "OFFICE": "משרד",
         "CORRIDOR": "מסדרון",
         "ELECTRICAL ROOM": "חדר חשמל",
@@ -31,7 +32,7 @@ def get_room_type(room):
         "OUTDOOR": "חוץ",
         "RAMP": "רמפה"
     }
-    room_type = synonyms.get(room_type.upper(), room_type)
+    room_type = synonyms.get(room_type.upper().replace(" ", ""), room_type)
 
     return room_type, None if room_type else "Room type missing"
 
