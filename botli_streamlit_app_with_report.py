@@ -114,7 +114,9 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     ws["B8"] = ", ".join(sources)
     for i, p in enumerate(participants, start=12):
         ws[f"B{i}"] = p
-    ws["B34"] = "\n".join(remarks)
+    start_row = 22
+    for i, remark in enumerate(remarks):
+        ws[f"B{start_row + i}"] = remark
     file_name = f"report_{room}.xlsx"
     wb.save(file_name)
     return file_name
