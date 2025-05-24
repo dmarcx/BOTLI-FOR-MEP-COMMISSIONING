@@ -125,7 +125,7 @@ if room:
                             for s in sources:
                                 st.write(f"🔌 {s}")
                             if st.checkbox("האם השילוט בפועל תואם לתכנון?"):
-                                if st.checkbox("האם האור כבה לאחר הפעלת מאמ"ת?"):
+                                if st.checkbox("""האם האור כבה לאחר הפעלת מאמ"ת?"""):
                                     st.success("בדיקת התאורה הסתיימה בהצלחה.")
                                     if st.button("📄 הפק דו"ח מסירה"):
                                         file = generate_report(room, room_type, planned, today, status, lux_result, sources)
