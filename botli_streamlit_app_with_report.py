@@ -176,7 +176,9 @@ if room:
                     if confirm == "לא":
                         manual_fixtures = st.text_area("אנא הזן את סוגי הגופים והכמויות כפי שנמצאו בפועל (שורה לכל פריט)")
                         if manual_fixtures.strip():
-                            fixtures = [line.strip() for line in manual_fixtures.splitlines() if line.strip()]
+                            if st.button("אשר את רשימת גופי התאורה בפועל"):
+                                fixtures = [line.strip() for line in manual_fixtures.splitlines() if line.strip()]
+                                st.success("הרשימה עודכנה בהצלחה.")
 
         else:
             st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
