@@ -79,7 +79,7 @@ def get_power_sources(room):
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
 
-def generate_report(room, room_type, planned, today, status, lux_result, sources, participants, dark_measured=None, dark_measured=dark_measured if darker_area == "כן" else None):
+def generate_report(room, room_type, planned, today, status, lux_result, sources, participants, dark_measured=None):
     wb = load_workbook("דוח מסירה.xlsx")
     ws = wb.active
     ws["A1"] = f"{room} - {room_type}"
