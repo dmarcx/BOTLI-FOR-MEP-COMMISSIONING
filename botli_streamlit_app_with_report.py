@@ -95,3 +95,70 @@ def generate_report(room, room_type, planned, today, status, lux_result, sources
     ws["B34"] = ", ".join(sources)
     if dark_measured is not None:
         ws["C23"] = f"{dark_measured} לוקס באזור חשוך"
+    output_path = f"report_{room}.xlsx"
+    wb.save(output_path)
+    return output_path
+
+# Streamlit App
+st.title("BOTLI – בדיקת תאורה")
+
+room = st.text_input("הזן מספר חדר (לדוגמה L3001):")
+if room:
+    room = room.upper().strip()
+    if len(room) == 5 and room[0] in ["L", "P"] and room[1:].isdigit():
+        room_type, error = get_room_type(room)
+        if error:
+            st.error(error)
+        else:
+            st.success(f"הבדיקה מתבצעת על חדר מספר {room} מסוג {room_type}.")
+
+            if check_documents(room):
+                st.info("כל המסמכים הוגשו.")
+                planned, today, status = get_schedule_date(room)
+                st.write(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
+
+                if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
+                    if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
+
+                        st.markdown("👥 **מי המשתתפים בבדיקה ומה תפקידם?**")
+                        participants = st.text_area("אנא רשום כל משתתף בשורה חדשה, בפורמט: שם – תפקיד")
+                        if participants.strip() == "":
+                            st.warning("יש להזין את שמות המשתתפים לפני שניתן להמשיך.")
+                            st.stop()
+                        confirm = st.radio("האם אלה כל המשתתפים או שיש עוד?", ("כן, זו הרשימה המלאה", "לא, אעדכן מאוחר יותר"))
+
+                        st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס"מ. ודא שאין אור חיצוני שמפריע.")
+                        measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
+                        if measured:
+                            lux_result = evaluate_lux(room_type, measured)
+                            st.info(lux_result)
+
+                            darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
+                            dark_measured = None
+                            if darker_area == "כן":
+                                st.markdown("🔦 **אנא מדוד את רמת ההארה בגובה 80 ס"מ באזור החשוך ביותר.**")
+                                dark_measured = st.number_input("מהי עוצמת ההארה באזור החשוך? (לוקס):", min_value=0)
+
+                            sources = get_power_sources(room)
+                            st.write("מקורות אספקה שנמצאו בתוכנית:")
+                            for s in sources:
+                                st.write(f"🔌 {s}")
+                            if st.checkbox("האם השילוט בפועל תואם לתכנון?"):
+                                if st.checkbox("האם האור כבה לאחר הפלת מאמ"ת?"):
+                                    st.success("בדיקת התאורה הסתיימה בהצלחה.")
+                                    if st.button("📄 הפק דו"ח מסירה"):
+                                        file = generate_report(room, room_type, planned, today, status, lux_result, sources, participants, dark_measured=dark_measured)
+                                        with open(file, "rb") as f:
+                                            st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
+                                else:
+                                    st.warning("נדרש לאמת את פעולת מאמ"ת.")
+                            else:
+                                st.warning("נדרש לתקן את השילוט או לעדכן את התכנון.")
+                    else:
+                        st.stop()
+                else:
+                    st.stop()
+            else:
+                st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
+    else:
+        st.error("הקלט שסופק אינו כולל אות אחת ואחריה 4 ספרות. לא ניתן להמשיך.")
