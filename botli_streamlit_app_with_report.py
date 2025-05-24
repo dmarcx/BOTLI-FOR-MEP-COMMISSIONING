@@ -102,6 +102,14 @@ def get_power_sources(room):
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
 
+def get_lighting_fixtures(room):
+    df = above_ground if room.startswith("L") else below_ground
+    row = df[df["Room Number"].str.upper().str.strip() == room]
+    if row.empty:
+        return "אין נתונים"
+    fixtures = row.iloc[0].get("Lighting Fixtures", "לא צויין")
+    return fixtures
+
 def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks):
     wb = load_workbook("דוח מסירה.xlsx")
     ws = wb.active
@@ -154,6 +162,13 @@ if room:
                         if not participants:
                             st.warning("נדרשת רשימת משתתפים להמשך.")
                             st.stop()
+
+                        st.markdown("### 💡 בדיקת גופי תאורה")
+                        fixtures = get_lighting_fixtures(room)
+                        st.info(f"גופי התאורה המתוכננים/המדווחים: {fixtures}")
+                        approved = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
+                        if approved == "לא":
+                            remarks.append(f"אי התאמה בכמות או סוג גופי התאורה: {fixtures}")
 
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                         if measured:
