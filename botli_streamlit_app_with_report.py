@@ -119,7 +119,7 @@ def get_lighting_fixtures(room):
         model_d = str(row.get("Model", "")).strip()
         quantity_e = str(row.get("Quantity", "")).strip()
         if type_c or model_d:
-            fixtures.append(f"{type_c} {model_d} – כמות: {quantity_e}")
+            fixtures.append(f"{type_c} {model_d}\nכמות: {quantity_e}")
     return fixtures if fixtures else ["לא צויין"]
 
 
@@ -147,7 +147,23 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
 room = st.text_input("הזן מספר חדר")
 if room:
     room = room.upper().strip()
-    fixtures = get_lighting_fixtures(room)
-    st.subheader("💡 בדיקת גופי תאורה")
-    st.info("\n".join(fixtures))
-    confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
+
+    # בדיקת גופי תאורה תתבצע לאחר הכנסת משתתפים
+    participants = []
+    st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
+    participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
+    if participants_text.strip():
+        participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
+        more = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"))
+        while more == "לא":
+            additional = st.text_area("הוסף משתתפים נוספים", key=f"more_{len(participants)}")
+            if additional.strip():
+                participants += [line.strip() for line in additional.splitlines() if line.strip()]
+                more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
+
+        # שלב בדיקת גופי התאורה לאחר הזנת המשתתפים
+        fixtures = get_lighting_fixtures(room)
+        st.subheader("💡 בדיקת גופי תאורה")
+        for fixture in fixtures:
+            st.info(fixture)
+        confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
