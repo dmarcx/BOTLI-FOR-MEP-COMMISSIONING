@@ -146,17 +146,17 @@ if room:
             planned, today, status = get_schedule_date(room)
             st.info(f"📅 התאריך המתוכנן הוא {planned}, היום {today}, הבדיקה {status}.")
 
-            proceed = st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?")
-            if proceed:
-                light_meter = st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?")
-                if light_meter:
+            proceed = st.radio("האם ניתן להתקדם לביצוע הבדיקה בפועל?", ["לא", "כן"])
+            if proceed == "כן":
+                light_meter = st.radio("האם קיים מד תאורה זמין לביצוע הבדיקה?", ["לא", "כן"])
+                if light_meter == "כן":
                     st.subheader("💡 בדיקת גופי תאורה")
                     fixtures = get_lighting_fixtures(room)
                     for fix in fixtures:
                         st.info(fix)
-                    match = st.checkbox("האם אלו גופי התאורה והכמות הקיימים בפועל?")
+                    match = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ["לא", "כן"])
                     remarks = []
-                    if not match:
+                    if match == "לא":
                         actual = st.text_area("אנא הזן את סוגי הגופים והכמויות כפי שנמצאו בפועל (שורה לכל פריט)")
                         if actual:
                             remarks += actual.splitlines()
@@ -175,8 +175,8 @@ if room:
                         st.info(lux_result)
 
                         dark_result = ""
-                        darker_area = st.checkbox("האם קיימים אזורים חשוכים יותר בחדר?")
-                        if darker_area:
+                        darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ["לא", "כן"])
+                        if darker_area == "כן":
                             dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
                             if dark_measure:
                                 dark_result = evaluate_lux(room_type, dark_measure)
@@ -190,12 +190,12 @@ if room:
                         else:
                             st.write("לא נמצאו מקורות אספקה.")
 
-                        signage_match = st.checkbox("האם השילוט בפועל תואם לתכנון?")
-                        if not signage_match:
+                        signage_match = st.radio("האם השילוט בפועל תואם לתכנון?", ["לא", "כן"])
+                        if signage_match == "לא":
                             remarks.append("שילוט לא תואם – נדרש תיקון או עדכון תכנון.")
 
-                        breaker_test = st.checkbox("האם האור כבה לאחר הפלת המאמת?")
-                        if not breaker_test:
+                        breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ["לא", "כן"])
+                        if breaker_test == "לא":
                             remarks.append("נדרש לאמת את פעולת המאמת – האור לא כבה לאחר הפלתו.")
 
                         if st.button("📄 הפק דוח מסירה"):
