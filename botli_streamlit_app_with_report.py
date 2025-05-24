@@ -109,10 +109,12 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     ws["B3"] = str(planned)
     ws["B4"] = str(today)
     ws["C4"] = status
-    ws["B8"] = lux_result
-    ws["B9"] = dark_result if dark_result else "לא נמדד"
-    ws["B10"] = ", ".join(sources)
-    ws["B11"] = "; ".join(participants)
+    ws["B6"] = lux_result
+    ws["B7"] = dark_result if dark_result else "לא נמדד"
+    ws["B8"] = ", ".join(sources)
+    for i, p in enumerate(participants, start=12):
+        ws[f"B{i}"] = p
+    ws["B34"] = "הבדיקה הסתיימה בהתאם להנחיות."
     file_name = f"report_{room}.xlsx"
     wb.save(file_name)
     return file_name
