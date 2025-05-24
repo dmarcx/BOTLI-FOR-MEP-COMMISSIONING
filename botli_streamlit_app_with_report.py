@@ -58,7 +58,12 @@ def evaluate_lux(room_type, measured_lux):
         "חוץ": 30,
         "רמפה": 300
     }
-    required = lux_table.get(room_type, 0)
+    required = lux_table.get(room_type)
+
+    if required is None:
+        st.warning(f"אזהרה: לא נמצאה דרישת לוקס עבור סוג החדר '{room_type}' — ייתכן שהערך שגוי או לא נתמך.")
+        return "סוג חדר לא מזוהה – דרישות התאורה אינן ידועות."
+
     deviation = measured_lux - required
 
     if deviation >= 0:
