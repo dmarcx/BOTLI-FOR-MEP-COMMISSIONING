@@ -14,7 +14,6 @@ def load_data():
 
 above_ground, below_ground = load_data()
 
-
 def get_room_type(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
@@ -37,14 +36,12 @@ def get_room_type(room):
 
     return room_type, None if room_type else "Room type missing"
 
-
 def check_documents(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None
     return row.iloc[0].get("מסמכים סופקו", "").strip() == "כן"
-
 
 def get_schedule_date(room):
     df = above_ground if room.startswith("L") else below_ground
@@ -64,7 +61,6 @@ def get_schedule_date(room):
     else:
         status = f"מוקדמת ב־{abs(delta)} ימים"
     return planned_date, today, status
-
 
 def evaluate_lux(room_type, measured_lux):
     lux_table = {
@@ -92,7 +88,6 @@ def evaluate_lux(room_type, measured_lux):
         return "סטייה קלה – תירשם הערה לידיעת המתכנן."
     else:
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
-
 
 def get_power_sources(room):
     if room.startswith("L"):
@@ -144,22 +139,15 @@ if room:
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                         if measured:
                             lux_result = evaluate_lux(room_type, measured)
-                            if "אינה תקינה" in lux_result:
-                                st.warning(lux_result)
-                            else:
-                                st.info(lux_result)
+                            st.info(lux_result)
 
                             darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
                             if darker_area == "כן":
                                 dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
                                 if dark_measure:
                                     dark_result = evaluate_lux(room_type, dark_measure)
-                                    if "אינה תקינה" in dark_result:
-                                        st.warning("באזור החשוך: " + dark_result)
-                                    else:
-                                        st.info("באזור החשוך: " + dark_result)
+                                    st.info("באזור החשוך: " + dark_result)
 
-                        # בדיקת מקורות אספקה ושילוט
                         sources = get_power_sources(room)
                         st.markdown("### ⚡ מקורות אספקה שנמצאו בתוכנית:")
                         if sources:
@@ -173,6 +161,15 @@ if room:
                             st.success("השילוט תואם לתכנון.")
                         else:
                             st.warning("נדרש לתקן את השילוט או לעדכן את התכנון.")
+
+                        breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ("כן", "לא"))
+                        if breaker_test == "כן":
+                            st.success("בדיקת הפסקת האור לאחר הפלת המאמת עברה בהצלחה.")
+                        else:
+                            st.warning("נדרש לאמת את פעולת המאמת.")
+
+                        if st.button("📄 הפק דו"ח מסירה"):
+                            st.info("דו"ח נוצר בהצלחה. (כאן תשתלב פונקציית הפקת הדו"ח בפועל)")
                     else:
                         st.warning("נדרש מד תאורה לביצוע הבדיקה.")
                 else:
