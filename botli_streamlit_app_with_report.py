@@ -115,7 +115,7 @@ if room:
 
                 if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
                     if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
-                        st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס"מ. ודא שאין אור חיצוני שמפריע.")
+                        st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס\"מ. ודא שאין אור חיצוני שמפריע.")
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                         if measured:
                             lux_result = evaluate_lux(room_type, measured)
