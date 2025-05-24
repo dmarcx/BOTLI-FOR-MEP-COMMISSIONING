@@ -102,7 +102,7 @@ def get_power_sources(room):
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
 
-def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants):
+def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks):
     wb = load_workbook("דוח מסירה.xlsx")
     ws = wb.active
     ws["A1"] = f"חדר {room} ({room_type})"
@@ -114,7 +114,7 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     ws["B8"] = ", ".join(sources)
     for i, p in enumerate(participants, start=12):
         ws[f"B{i}"] = p
-    ws["B34"] = "הבדיקה הסתיימה בהתאם להנחיות."
+    ws["B34"] = "\n".join(remarks)
     file_name = f"report_{room}.xlsx"
     wb.save(file_name)
     return file_name
@@ -138,6 +138,7 @@ if room:
                 if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
                     if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
                         participants = []
+                        remarks = []
                         st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
                         participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
                         if participants_text.strip():
@@ -156,6 +157,8 @@ if room:
                         if measured:
                             lux_result = evaluate_lux(room_type, measured)
                             st.info(lux_result)
+                            if "אינה תקינה" in lux_result:
+                                remarks.append(lux_result)
 
                             dark_result = ""
                             darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
@@ -164,6 +167,8 @@ if room:
                                 if dark_measure:
                                     dark_result = evaluate_lux(room_type, dark_measure)
                                     st.info("באזור החשוך: " + dark_result)
+                                    if "אינה תקינה" in dark_result:
+                                        remarks.append("באזור החשוך: " + dark_result)
 
                         sources = get_power_sources(room)
                         st.markdown("### ⚡ מקורות אספקה שנמצאו בתוכנית:")
@@ -177,16 +182,20 @@ if room:
                         if signage_match:
                             st.success("השילוט תואם לתכנון.")
                         else:
-                            st.warning("נדרש לתקן את השילוט או לעדכן את התכנון.")
+                            warning = "נדרש לתקן את השילוט או לעדכן את התכנון."
+                            st.warning(warning)
+                            remarks.append(warning)
 
                         breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ("כן", "לא"))
                         if breaker_test == "כן":
                             st.success("המאמת פועל כמצופה.")
                         else:
-                            st.warning("נדרש לאמת את פעולת המאמת.")
+                            warning = "נדרש לאמת את פעולת המאמת."
+                            st.warning(warning)
+                            remarks.append(warning)
 
                         if st.button("📄 הפק דו""ח מסירה"):
-                            file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants)
+                            file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks)
                             with open(file, "rb") as f:
                                 st.download_button("📥 הורד את הדו""ח", data=f, file_name=file)
                     else:
