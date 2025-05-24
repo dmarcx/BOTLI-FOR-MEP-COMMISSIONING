@@ -214,7 +214,7 @@ if room:
                     else:
                         st.warning("נדרש לאמת את פעולת המאמת.")
 
-                    if st.button('📄 הפק דו"ח מסירה'):
+                    if st.button("📄 הפק דו\"ח מסירה"):
                         remarks = [lux_result]
                         if dark_result:
                             remarks.append("באזור חשוך: " + dark_result)
@@ -224,6 +224,6 @@ if room:
                             remarks.append("נדרש לאמת את פעולת המאמת")
                         file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks)
                         with open(file, "rb") as f:
-                            st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
+                            st.download_button("📥 הורד את הדו\"ח", data=f, file_name=file)
         else:
             st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
