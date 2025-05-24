@@ -59,9 +59,11 @@ def evaluate_lux(room_type, measured_lux):
         "רמפה": 300
     }
     required = lux_table.get(room_type, 0)
-    if measured_lux >= required:
+    deviation = measured_lux - required
+
+    if deviation >= 0:
         return "רמת ההארה תקינה."
-    elif 0 < required - measured_lux <= 10:
+    elif -10 <= deviation < 0:
         return "סטייה קלה – תירשם הערה לידיעת המתכנן."
     else:
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
@@ -121,11 +123,19 @@ if room:
                     if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
 
                         st.markdown("👥 **מי המשתתפים בבדיקה ומה תפקידם?**")
-                        participants = st.text_area("אנא רשום כל משתתף בשורה חדשה, בפורמט: שם – תפקיד")
-                        if participants.strip() == "":
+                        participants_list = []
+                        while True:
+                            new_participant = st.text_input("שם – תפקיד", key=f"participant_{len(participants_list)}")
+                            if new_participant:
+                                participants_list.append(new_participant)
+                            done = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants_list)}")
+                            if done == "כן":
+                                break
+
+                        participants = "\n".join(participants_list)
+                        if not participants.strip():
                             st.warning("יש להזין את שמות המשתתפים לפני שניתן להמשיך.")
                             st.stop()
-                        confirm = st.radio("האם אלה כל המשתתפים או שיש עוד?", ("כן, זו הרשימה המלאה", "לא, אעדכן מאוחר יותר"))
 
                         st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס\"מ. ודא שאין אור חיצוני שמפריע.")
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
