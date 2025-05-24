@@ -123,14 +123,15 @@ if room:
                     if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
 
                         st.markdown("👥 **מי המשתתפים בבדיקה ומה תפקידם?**")
-                        participants_list = []
+                        participants_list = st.text_area("אנא הזן את רשימת המשתתפים בפורמט 'שם – תפקיד', שורה לכל משתתף:").splitlines()
+
                         while True:
-                            new_participant = st.text_input("שם – תפקיד", key=f"participant_{len(participants_list)}")
-                            if new_participant:
-                                participants_list.append(new_participant)
-                            done = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"), key=f"done_{len(participants_list)}")
+                            done = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"), key="confirm_participants")
                             if done == "כן":
                                 break
+                            else:
+                                more = st.text_area("הוסף משתתפים נוספים בפורמט 'שם – תפקיד', שורה לכל משתתף:").splitlines()
+                                participants_list.extend(more)
 
                         participants = "\n".join(participants_list)
                         if not participants.strip():
