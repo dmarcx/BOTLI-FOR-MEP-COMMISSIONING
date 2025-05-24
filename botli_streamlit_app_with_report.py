@@ -153,18 +153,6 @@ if room:
             if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
                 if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
 
-                    # בדיקת גופי תאורה מתבצעת כאן
-                    fixtures = get_lighting_fixtures(room)
-                    st.subheader("\U0001F4A1 בדיקת גופי תאורה")
-                    for fixture in fixtures:
-                        st.info(fixture)
-                    confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
-
-                    if confirm == "לא":
-                        manual_fixtures = st.text_area("אנא הזן את סוגי הגופים והכמויות כפי שנמצאו בפועל (שורה לכל פריט)")
-                        if manual_fixtures.strip():
-                            fixtures = [line.strip() for line in manual_fixtures.splitlines() if line.strip()]
-
                     # משתתפים
                     participants = []
                     st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
@@ -177,5 +165,18 @@ if room:
                             if additional.strip():
                                 participants += [line.strip() for line in additional.splitlines() if line.strip()]
                                 more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
+
+                    # בדיקת גופי תאורה
+                    fixtures = get_lighting_fixtures(room)
+                    st.subheader("\U0001F4A1 בדיקת גופי תאורה")
+                    for fixture in fixtures:
+                        st.info(fixture)
+                    confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
+
+                    if confirm == "לא":
+                        manual_fixtures = st.text_area("אנא הזן את סוגי הגופים והכמויות כפי שנמצאו בפועל (שורה לכל פריט)")
+                        if manual_fixtures.strip():
+                            fixtures = [line.strip() for line in manual_fixtures.splitlines() if line.strip()]
+
         else:
             st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
