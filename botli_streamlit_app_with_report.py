@@ -115,10 +115,15 @@ if room:
                             else:
                                 st.info(lux_result)
 
-                            # Continue even if lux is not valid
                             darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
                             if darker_area == "כן":
                                 dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
+                                if dark_measure:
+                                    dark_result = evaluate_lux(room_type, dark_measure)
+                                    if "אינה תקינה" in dark_result:
+                                        st.warning("באזור החשוך: " + dark_result)
+                                    else:
+                                        st.info("באזור החשוך: " + dark_result)
                     else:
                         st.warning("נדרש מד תאורה לביצוע הבדיקה.")
                 else:
