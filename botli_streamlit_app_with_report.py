@@ -27,14 +27,14 @@ def check_documents(room):
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None
-    return row.iloc[0].get("מסמכים סופקו", "").strip() == "כן"
+    return row.iloc[0].get("Documents Supplied", "").strip() == "כן"
 
 def get_schedule_date(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None, None, "Room not found"
-    planned_date_str = row.iloc[0].get("Commissioning planned date", "").strip()
+    planned_date_str = row.iloc[0].get("Planned Date", "").strip()
     if not planned_date_str:
         return None, None, "No planned date found"
     planned_date = datetime.strptime(planned_date_str, "%d-%b-%y").date()
@@ -124,14 +124,14 @@ if room:
                             for s in sources:
                                 st.write(f"🔌 {s}")
                             if st.checkbox("""האם השילוט בפועל תואם לתכנון?"""):
-                                if st.checkbox("""האם האור כבה לאחר הפעלת מאמ"ת?"""):
+                                if st.checkbox("""האם האור כבה לאחר הפלת מאמ"ת?"""):
                                     st.success("""בדיקת התאורה הסתיימה בהצלחה.""")
                                     if st.button("""📄 הפק דו"ח מסירה"""):
                                         file = generate_report(room, room_type, planned, today, status, lux_result, sources)
                                         with open(file, "rb") as f:
                                             st.download_button("""📥 הורד את הדו"ח""", data=f, file_name=file)
                                 else:
-                                    st.warning("""נדרש לאמת את פעולת מאמ"ת.""")
+                                    st.warning("""נדרש לאמת את הפעלת מאמ"ת.""")
                             else:
                                 st.warning("""נדרש לתקן את השילוט או לעדכן את התכנון.""")
                     else:
