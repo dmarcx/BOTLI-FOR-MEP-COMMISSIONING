@@ -127,7 +127,7 @@ if room:
                             st.stop()
                         confirm = st.radio("האם אלה כל המשתתפים או שיש עוד?", ("כן, זו הרשימה המלאה", "לא, אעדכן מאוחר יותר"))
 
-                        st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס"מ. ודא שאין אור חיצוני שמפריע.")
+                        st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס\"מ. ודא שאין אור חיצוני שמפריע.")
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                         if measured:
                             lux_result = evaluate_lux(room_type, measured)
@@ -136,7 +136,7 @@ if room:
                             darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
                             dark_measured = None
                             if darker_area == "כן":
-                                st.markdown("🔦 **אנא מדוד את רמת ההארה בגובה 80 ס"מ באזור החשוך ביותר.**")
+                                st.markdown("🔦 **אנא מדוד את רמת ההארה בגובה 80 ס\"מ באזור החשוך ביותר.**")
                                 dark_measured = st.number_input("מהי עוצמת ההארה באזור החשוך? (לוקס):", min_value=0)
 
                             sources = get_power_sources(room)
@@ -144,14 +144,14 @@ if room:
                             for s in sources:
                                 st.write(f"🔌 {s}")
                             if st.checkbox("האם השילוט בפועל תואם לתכנון?"):
-                                if st.checkbox("האם האור כבה לאחר הפלת מאמ"ת?"):
+                                if st.checkbox("האם האור כבה לאחר הפלת מאמ\"ת?"):
                                     st.success("בדיקת התאורה הסתיימה בהצלחה.")
-                                    if st.button("📄 הפק דו"ח מסירה"):
+                                    if st.button("📄 הפק דו\"ח מסירה"):
                                         file = generate_report(room, room_type, planned, today, status, lux_result, sources, participants, dark_measured=dark_measured)
                                         with open(file, "rb") as f:
-                                            st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
+                                            st.download_button("📥 הורד את הדו\"ח", data=f, file_name=file)
                                 else:
-                                    st.warning("נדרש לאמת את פעולת מאמ"ת.")
+                                    st.warning("נדרש לאמת את פעולת מאמ\"ת.")
                             else:
                                 st.warning("נדרש לתקן את השילוט או לעדכן את התכנון.")
                     else:
