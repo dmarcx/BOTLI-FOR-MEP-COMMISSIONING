@@ -34,7 +34,7 @@ def get_schedule_date(room):
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None, None, "Room not found"
-    planned_date_str = row.iloc[0].get("Planned Date", "").strip()
+    planned_date_str = row.iloc[0].get("Commissioning planned date", "").strip()
     if not planned_date_str:
         return None, None, "No planned date found"
     planned_date = datetime.strptime(planned_date_str, "%d-%b-%y").date()
