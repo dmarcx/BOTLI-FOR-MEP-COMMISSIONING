@@ -113,7 +113,7 @@ def get_lighting_fixtures(room):
         model_d = str(row.get("Model", "")).strip()
         quantity_e = str(row.get("Quantity", "")).strip()
         if type_c or model_d:
-            fixtures.append(f"{type_c} {model_d}\nכמות: {quantity_e}")
+            fixtures.append(f"{type_c} {model_d} – כמות: {quantity_e}")
     return fixtures if fixtures else ["לא צויין"]
 
 def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks):
@@ -146,6 +146,7 @@ if room:
         st.success(f"מספר חדר: {room} | סוג חדר: {room_type}")
 
         if check_documents(room):
+            st.info("כל המסמכים הוגשו.")
             planned, today, status = get_schedule_date(room)
             st.info(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
 
@@ -171,3 +172,5 @@ if room:
                             if additional.strip():
                                 participants += [line.strip() for line in additional.splitlines() if line.strip()]
                                 more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
+        else:
+            st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
