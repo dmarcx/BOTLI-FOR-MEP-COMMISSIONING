@@ -180,5 +180,50 @@ if room:
                                 fixtures = [line.strip() for line in manual_fixtures.splitlines() if line.strip()]
                                 st.success("הרשימה עודכנה בהצלחה.")
 
+                    # המשך בדיקה לאחר עדכון גופי תאורה
+                    measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
+                    lux_result = dark_result = ""
+                    if measured:
+                        lux_result = evaluate_lux(room_type, measured)
+                        st.info(lux_result)
+
+                    darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
+                    if darker_area == "כן":
+                        dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
+                        if dark_measure:
+                            dark_result = evaluate_lux(room_type, dark_measure)
+                            st.info("באזור החשוך: " + dark_result)
+
+                    sources = get_power_sources(room)
+                    st.markdown("### ⚡ מקורות אספקה שנמצאו בתוכנית:")
+                    if sources:
+                        for s in sources:
+                            st.write(f"🔌 {s}")
+                    else:
+                        st.write("לא נמצאו מקורות אספקה.")
+
+                    signage_match = st.checkbox("האם השילוט בפועל תואם לתכנון?")
+                    if signage_match:
+                        st.success("השילוט תואם לתכנון.")
+                    else:
+                        st.warning("נדרש לתקן את השילוט או לעדכן את התכנון.")
+
+                    breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ("כן", "לא"))
+                    if breaker_test == "כן":
+                        st.success("המאמת פועל כמצופה.")
+                    else:
+                        st.warning("נדרש לאמת את פעולת המאמת.")
+
+                    if st.button("📄 הפק דו"ח מסירה"):
+                        remarks = [lux_result]
+                        if dark_result:
+                            remarks.append("באזור חשוך: " + dark_result)
+                        if not signage_match:
+                            remarks.append("השילוט אינו תואם לתכנון")
+                        if breaker_test != "כן":
+                            remarks.append("נדרש לאמת את פעולת המאמת")
+                        file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks)
+                        with open(file, "rb") as f:
+                            st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
         else:
             st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
