@@ -1,0 +1,734 @@
+﻿Room Number,Category,Family,Type,Quantity,Commissioning planned date,Type of room,Area,מסמכים סופקו
+L0001,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,12-May-25,stairs,30.8,כן
+L0001,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,12-May-25,stairs,30.8,כן
+L0001,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,12-May-25,stairs,30.8,כן
+L0001,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,12-May-25,stairs,30.8,כן
+L0002,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,17-May-25,MAKERS LAB,390.23,לא
+L0002,Mechanical Equipment,AWSQ 700(right),AWSQ 700,3,17-May-25,MAKERS LAB,390.23,לא
+L0004,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,22-May-25,stairs,30.8,כן
+L0004,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,22-May-25,stairs,30.8,כן
+L0004,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,22-May-25,stairs,30.8,כן
+L0004,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,22-May-25,stairs,30.8,כן
+L0005,Electrical Fixtures,Frame_Socket,1 AC,1,15-May-25,shelter,18.92,לא
+L0005,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,15-May-25,shelter,18.92,לא
+L0006,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,09-May-25,guest toilets,13.33,כן
+L0006,Electrical Fixtures,Frame_Socket,Type 2,3,09-May-25,guest toilets,13.33,כן
+L0009,Electrical Fixtures,Frame_Socket,1 AC,1,03-May-25,elevators Lobby,31.39,כן
+L0009,Mechanical Equipment,AW 800,AW 800,1,03-May-25,elevators Lobby,31.39,כן
+L0011,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,31.2,כן
+L0011,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,31.2,כן
+L0011,Electrical Fixtures,Frame_Socket,1 AC GEN,2,06-May-25,it /security room,31.2,כן
+L0011,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,31.2,כן
+L0011,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,12,06-May-25,it /security room,31.2,כן
+L0011,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,12,06-May-25,it /security room,31.2,כן
+L0011,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,31.2,כן
+L0011,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,31.2,כן
+L0011,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,31.2,כן
+L0012,Electrical Fixtures,Frame_Socket,1 AC,1,13-May-25,supply zone(fire),9.86,לא
+L0012,Mechanical Equipment,AWSQ 450,AWSQ 450,1,13-May-25,supply zone(fire),9.86,לא
+L0013,Electrical Fixtures,Frame_Socket,1 AC,1,27-May-25,cleaning room,6.41,לא
+L0013,Electrical Fixtures,M_Junction Boxes - W,W,1,27-May-25,cleaning room,6.41,לא
+L0013,Mechanical Equipment,AW 450,AW 450,1,27-May-25,cleaning room,6.41,לא
+L0015,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,07-May-25,LSS shaft,0.8,כן
+L0016,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,10-May-25,UNISEX  w.c,13.43,כן
+L0016,Electrical Fixtures,Frame_Socket,Type 2,3,10-May-25,UNISEX  w.c,13.43,כן
+L0017,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,24-May-25,electricity shaft,2.77,לא
+L0017,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,24-May-25,electricity shaft,2.77,לא
+L0019,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,17-May-25,electricity shaft,4.32,לא
+L0019,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,17-May-25,electricity shaft,4.32,לא
+L0024,Electrical Fixtures,Frame_Socket,1 AC,1,09-May-25,LSS/FMS room,7.93,לא
+L0024,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,09-May-25,LSS/FMS room,7.93,לא
+L0024,Mechanical Equipment,AWSQ 450,AWSQ 450,1,09-May-25,LSS/FMS room,7.93,לא
+L0025,Mechanical Equipment,AWSQ 1000(right),AWSQ 1000,1,22-May-25,shelter,49.12,לא
+L0025,Mechanical Equipment,AWSQ 1500(right),AWSQ 1500,1,22-May-25,shelter,49.12,לא
+L0026,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,04-May-25,men w.c,34.56,לא
+L0026,Electrical Fixtures,Frame_Socket,Type 2,9,04-May-25,men w.c,34.56,לא
+L0027,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,22-May-25,plumbing shaft,8.19,לא
+L0030,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,12-May-25,it /security room,31.2,כן
+L0030,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,12-May-25,it /security room,31.2,כן
+L0030,Electrical Fixtures,Frame_Socket,1 AC GEN,1,12-May-25,it /security room,31.2,כן
+L0030,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,12-May-25,it /security room,31.2,כן
+L0030,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,6,12-May-25,it /security room,31.2,כן
+L0030,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,6,12-May-25,it /security room,31.2,כן
+L0030,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,12-May-25,it /security room,31.2,כן
+L0030,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,10,12-May-25,it /security room,31.2,כן
+L0030,Mechanical Equipment,AWV 1200,AWV 1200,2,12-May-25,it /security room,31.2,כן
+L0031,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,23-May-25,service zone (fire),9.86,לא
+L0031,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,23-May-25,service zone (fire),9.86,לא
+L0035,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,14-May-25,women w.c,33.72,כן
+L0035,Electrical Fixtures,Frame_Socket,Type 2,9,14-May-25,women w.c,33.72,כן
+L0036,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,05-May-25,electricity shaft,2.77,לא
+L0036,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,05-May-25,electricity shaft,2.77,לא
+L0040,Electrical Fixtures,Frame_Socket,1 AC,1,10-May-25,LSS/FMS room,7.93,לא
+L0040,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,10-May-25,LSS/FMS room,7.93,לא
+L0040,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,10-May-25,LSS/FMS room,7.93,לא
+L0040,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,10-May-25,LSS/FMS room,7.93,לא
+L0041,Mechanical Equipment,AW 800(right),AW 800,1,03-May-25,elevators Lobby,31.88,לא
+L0045,Electrical Fixtures,M_Junction Boxes - W,W63A,1,03-May-25,cabinet,0.23,כן
+L0047,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,03-May-25,LSS shaft,0.8,כן
+L0048,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,03-May-25,electricity shaft,5.07,לא
+L0048,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,03-May-25,electricity shaft,5.07,לא
+L0056,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,03-May-25,women w.c,19.23,כן
+L0057,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,03-May-25,men w.c,22.47,לא
+L0057,Electrical Fixtures,Frame_Socket,Type 2,4,03-May-25,men w.c,22.47,לא
+L0058,Electrical Fixtures,M_Junction Boxes - W,W,1,03-May-25,cleaning room,6.53,כן
+L0065,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,03-May-25,shelter,23.41,כן
+L0066,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,03-May-25,LSS/FMS room,8.91,לא
+L0066,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,03-May-25,LSS/FMS room,8.91,לא
+L0068,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,12-May-25,Systems room,4.75,לא
+L0070,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,12-May-25,stairs,30.8,כן
+L0070,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,12-May-25,stairs,30.8,כן
+L0070,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,12-May-25,stairs,30.8,כן
+L0070,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,12-May-25,stairs,30.8,כן
+L0081,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,12-May-25,it /security room,32.05,כן
+L0081,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,12-May-25,it /security room,32.05,כן
+L0081,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,12-May-25,it /security room,32.05,כן
+L0081,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,12-May-25,it /security room,32.05,כן
+L0081,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,12-May-25,it /security room,32.05,כן
+L0081,Mechanical Equipment,AWV 1200,AWV 1200,2,12-May-25,it /security room,32.05,כן
+L0082,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x100x210 UPS,1,12-May-25,electricity cabinet,2.57,כן
+L0082,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,12-May-25,electricity cabinet,2.57,כן
+L0084,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 GEN,1,12-May-25,electricity cabinet,6.68,כן
+L0084,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x360x210,1,12-May-25,electricity cabinet,6.68,כן
+L0084,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,12-May-25,electricity cabinet,6.68,כן
+L0089,Electrical Fixtures,M_Junction Boxes - W,W,1,12-May-25,cleaning room,6.41,כן
+L0089,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,12-May-25,cleaning room,6.41,כן
+L0092,Mechanical Equipment,AWSQ 1500,AWSQ 1500,1,25-May-25,shelter,27.95,כן
+L0093,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,25-May-25,corridor,16.86,לא
+L0094,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,25-May-25,corridor,7.35,כן
+L0094,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,25-May-25,corridor,7.35,כן
+L0096,Electrical Fixtures,Frame_Socket,1 AC,1,25-May-25,shelter,21.28,כן
+L0096,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,25-May-25,shelter,21.28,כן
+L0099,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,25-May-25,corridor,15.29,לא
+L0099,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,25-May-25,corridor,15.29,לא
+L0099,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,25-May-25,corridor,15.29,לא
+L0100,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210,1,25-May-25,corridor,23.27,כן
+L0100,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,25-May-25,corridor,23.27,כן
+L0100,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,25-May-25,corridor,23.27,כן
+L0100,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,25-May-25,corridor,23.27,כן
+L0102,Mechanical Equipment,Kitchen hoods(one way),50x50,1,25-May-25,kitchen,121.17,כן
+L0102,Mechanical Equipment,Kitchen hoods(two ways),205Ñ…95,1,25-May-25,kitchen,121.17,כן
+L0104,Mechanical Equipment,M_Outside unit,Outside unit,2,25-May-25,main lobby,372.75,כן
+L0116,Electrical Fixtures,Frame_Socket,Normal x2,28,25-May-25,OFFICES,908.48,לא
+L0116,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,25-May-25,OFFICES,908.48,לא
+L0116,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,3,25-May-25,OFFICES,908.48,לא
+L0116,Mechanical Equipment,Fan-Stand_Alone-Twin_City_Fan_,Fan 150 CLI,1,25-May-25,OFFICES,908.48,לא
+L0117,Mechanical Equipment,AHU 6000 CFM,AHU 6000 CFM,2,25-May-25,AUDITORIUM STOTAGE,54.28,כן
+L0130,Mechanical Equipment,Electrical cabinet,Electrical cabinet,1,25-May-25,AV room,14.79,לא
+L0131,Mechanical Equipment,Fan-Stand_Alone-Twin_City_Fan_,Fan 122 CLII,1,25-May-25,kitchen,398.2,לא
+L0131,Mechanical Equipment,Kitchen hoods(one way),205Ñ…95,1,25-May-25,kitchen,398.2,לא
+L0131,Mechanical Equipment,Kitchen hoods(three ways),660 Ñ…145,1,25-May-25,kitchen,398.2,לא
+L0131,Mechanical Equipment,Kitchen hoods(two ways),100Ñ…80,2,25-May-25,kitchen,398.2,לא
+L0131,Mechanical Equipment,Kitchen hoods(two ways),350Ñ…120,1,25-May-25,kitchen,398.2,לא
+L0131,Mechanical Equipment,Kitchen hoods(two ways),490Ñ…140,1,25-May-25,kitchen,398.2,לא
+L0131,Mechanical Equipment,M_Mechanical Equipment_Inert Base,80x115,1,25-May-25,kitchen,398.2,לא
+L0135,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,25-May-25,hall intrence,651.44,לא
+L0141,Electrical Fixtures,Frame_Socket,FOR LSS UPS,4,25-May-25,OCC,49.82,כן
+L1001,Electrical Fixtures,Frame_Socket,Type 2,4,19-May-25,shelter,51.41,כן
+L1001,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,19-May-25,shelter,51.41,כן
+L1001,Mechanical Equipment,AWSQ 1500,AWSQ 1500,1,19-May-25,shelter,51.41,כן
+L1002,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,19-May-25,men w.c,13.33,לא
+L1002,Electrical Fixtures,Frame_Socket,Type 2,3,19-May-25,men w.c,13.33,לא
+L1005,Mechanical Equipment,AW 800,AW 800,1,19-May-25,elevators Lobby,31.72,כן
+L1011,Electrical Fixtures,Frame_Socket,Type 2,5,19-May-25,shelter,51.42,כן
+L1011,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,19-May-25,shelter,51.42,כן
+L1011,Mechanical Equipment,AWSQ 1500,AWSQ 1500,1,19-May-25,shelter,51.42,כן
+L1012,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,19-May-25,plumbing shaft,8.19,כן
+L1015,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,19-May-25,it /security room,31.2,לא
+L1015,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,19-May-25,it /security room,31.2,לא
+L1015,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,19-May-25,it /security room,31.2,לא
+L1015,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,19-May-25,it /security room,31.2,לא
+L1015,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,19-May-25,it /security room,31.2,לא
+L1015,Mechanical Equipment,AWV 1200,AWV 1200,2,19-May-25,it /security room,31.2,לא
+L1020,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,19-May-25,women w.c,13.43,כן
+L1020,Electrical Fixtures,Frame_Socket,Type 2,3,19-May-25,women w.c,13.43,כן
+L1021,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,19-May-25,electricity shaft,2.77,לא
+L1021,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,19-May-25,electricity shaft,2.77,לא
+L1023,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,19-May-25,electricity shaft,5.07,כן
+L1023,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,19-May-25,electricity shaft,5.07,כן
+L1026,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,19-May-25,LSS/FMS room,7.93,לא
+L1028,Electrical Fixtures,Frame_Socket,Type 2,1,19-May-25,recycling station,1.77,כן
+L1030,Electrical Fixtures,Frame_Socket,Type 2,2,19-May-25,recycling station,1.77,לא
+L1031,Electrical Fixtures,M_Junction Boxes - W,W,1,19-May-25,cleaning room,6.41,כן
+L1031,Mechanical Equipment,AW 450,AW 450,1,19-May-25,cleaning room,6.41,כן
+L1032,Electrical Fixtures,M_Junction Boxes - W,W,1,19-May-25,cleaning room,6.41,לא
+L1033,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,19-May-25,LSS shaft,0.8,לא
+L1038,Electrical Fixtures,Frame_Socket,Type 1,6,19-May-25,cardo,1908.16,לא
+L1038,Electrical Fixtures,Frame_Socket,Type 2,1,19-May-25,cardo,1908.16,לא
+L1041,Mechanical Equipment,AWSQ 450,AWSQ 450,1,19-May-25,service zone (fire),9.86,כן
+L1043,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,19-May-25,women w.c,13.43,לא
+L1043,Electrical Fixtures,Frame_Socket,Type 2,3,19-May-25,women w.c,13.43,לא
+L1044,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,19-May-25,electricity shaft,2.77,לא
+L1044,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,19-May-25,electricity shaft,2.77,לא
+L1046,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,19-May-25,electricity shaft,4.32,כן
+L1046,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,19-May-25,electricity shaft,4.32,כן
+L1049,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,19-May-25,LSS/FMS room,7.93,לא
+L1049,Mechanical Equipment,AWSQ 450,AWSQ 450,1,19-May-25,LSS/FMS room,7.93,לא
+L1050,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,19-May-25,men w.c,13.33,לא
+L1050,Electrical Fixtures,Frame_Socket,Type 2,3,19-May-25,men w.c,13.33,לא
+L1053,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,19-May-25,LSS shaft,0.8,כן
+L1056,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,19-May-25,HSSD,0.79,כן
+L1056,Electrical Fixtures,Frame_Socket,Type 2,1,19-May-25,HSSD,0.79,כן
+L1058,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,19-May-25,men w.c,20.6,לא
+L1058,Electrical Fixtures,Frame_Socket,Type 2,4,19-May-25,men w.c,20.6,לא
+L1059,Electrical Fixtures,M_Junction Boxes - W,W,1,19-May-25,cleaning room,8.32,כן
+L1066,Mechanical Equipment,AWSQ 2000,AWSQ 2000,1,19-May-25,shelter,65.26,לא
+L1067,Electrical Fixtures,Frame_Socket,FOR LSS UPS,2,19-May-25,LSS/FMS room,14.37,כן
+L1082,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,19-May-25,it /security room,32.05,כן
+L1082,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,19-May-25,it /security room,32.05,כן
+L1082,Electrical Fixtures,Frame_Socket,1 AC GEN,2,19-May-25,it /security room,32.05,כן
+L1082,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,19-May-25,it /security room,32.05,כן
+L1082,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,19-May-25,it /security room,32.05,כן
+L1083,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 UPS,1,19-May-25,electricity cabinet,2.57,כן
+L1083,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,19-May-25,electricity cabinet,2.57,כן
+L1084,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,19-May-25,electricity cabinet,6.68,לא
+L1084,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,19-May-25,electricity cabinet,6.68,לא
+L1084,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,19-May-25,electricity cabinet,6.68,לא
+L1087,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,19-May-25,it /security room,31.2,כן
+L1087,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,19-May-25,it /security room,31.2,כן
+L1087,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,19-May-25,it /security room,31.2,כן
+L1087,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,19-May-25,it /security room,31.2,כן
+L1089,Electrical Fixtures,Frame_Socket,Normal x2,3,19-May-25,OFFICES,538.88,לא
+L1089,Electrical Fixtures,Frame_Socket,Type 1,47,19-May-25,OFFICES,538.88,לא
+L1089,Electrical Fixtures,Frame_Socket,Type 2,13,19-May-25,OFFICES,538.88,לא
+L1090,Electrical Equipment,E_Wall Junction Box_MEPcontent_ABB_KNX Box_INT-EN_Shared,6131_38-183-500,2,19-May-25,OFFICES,647.03,לא
+L1090,Electrical Fixtures,Detector Presence,Presence WC LM detector Mov,2,19-May-25,OFFICES,647.03,לא
+L1090,Electrical Fixtures,Frame_Socket,Normal x2,3,19-May-25,OFFICES,647.03,לא
+L1090,Electrical Fixtures,Frame_Socket,Type 1,72,19-May-25,OFFICES,647.03,לא
+L1090,Electrical Fixtures,Frame_Socket,Type 2,14,19-May-25,OFFICES,647.03,לא
+L1091,Electrical Fixtures,Frame_Socket,Type 1,25,19-May-25,OFFICES,248.69,כן
+L1091,Electrical Fixtures,Frame_Socket,Type 2,7,19-May-25,OFFICES,248.69,כן
+L1096,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,19-May-25,HSSD,0.65,לא
+L2001,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,19-May-25,corridor,17.81,כן
+L2003,Electrical Fixtures,Frame_Socket,Type 2,4,06-May-25,shelter,51.68,לא
+L2003,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,shelter,51.68,לא
+L2003,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,shelter,51.68,לא
+L2003,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,shelter,51.68,לא
+L2003,Mechanical Equipment,AWSQ 1000(right),AWSQ 1000,1,06-May-25,shelter,51.68,לא
+L2003,Mechanical Equipment,AWSQ 1500(right),AWSQ 1500,1,06-May-25,shelter,51.68,לא
+L2004,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,13.49,כן
+L2004,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,men w.c,13.49,כן
+L2004,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,13.49,כן
+L2004,Lighting Fixtures,M_Ceiling Light - Linear Box1,Emergency Lamp,1,06-May-25,men w.c,13.49,כן
+L2007,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,32.18,לא
+L2007,Mechanical Equipment,AW 800(right),AW 800,1,06-May-25,elevators Lobby,32.18,לא
+L2009,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,32.4,לא
+L2009,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.4,לא
+L2009,Electrical Fixtures,Frame_Socket,Gen,2,06-May-25,it /security room,32.4,לא
+L2009,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.4,לא
+L2009,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,לא
+L2009,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,לא
+L2009,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.4,לא
+L2009,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.4,לא
+L2009,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.4,לא
+L2010,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,service zone (fire),9.86,לא
+L2010,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,service zone (fire),9.86,לא
+L2013,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,13.59,לא
+L2013,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,women w.c,13.59,לא
+L2013,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,13.59,לא
+L2014,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity shaft,5.08,כן
+L2014,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,5.08,כן
+L2016,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity shaft,4.41,כן
+L2016,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,4.41,כן
+L2021,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,06-May-25,LSS/FMS room,8.19,כן
+L2021,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,LSS/FMS room,8.19,כן
+L2024,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,LSS shaft,0.9,לא
+L2025,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,6.41,כן
+L2025,Mechanical Equipment,AW 450(right),AW 450,1,06-May-25,cleaning room,6.41,כן
+L2028,Electrical Fixtures,Frame_Socket,Normal x2,2,06-May-25,shelter,51.68,כן
+L2028,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,shelter,51.68,כן
+L2028,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,shelter,51.68,כן
+L2028,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,shelter,51.68,כן
+L2028,Mechanical Equipment,AWSQ 1000(right),AWSQ 1000,1,06-May-25,shelter,51.68,כן
+L2028,Mechanical Equipment,AWSQ 1500(right),AWSQ 1500,1,06-May-25,shelter,51.68,כן
+L2029,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,13.49,לא
+L2029,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,men w.c,13.49,לא
+L2029,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,13.49,לא
+L2033,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,32.4,לא
+L2033,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.4,לא
+L2033,Electrical Fixtures,Frame_Socket,Gen,2,06-May-25,it /security room,32.4,לא
+L2033,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.4,לא
+L2033,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,12,06-May-25,it /security room,32.4,לא
+L2033,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,12,06-May-25,it /security room,32.4,לא
+L2033,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.4,לא
+L2033,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.4,לא
+L2033,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.4,לא
+L2034,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,service zone (fire),9.86,לא
+L2034,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,service zone (fire),9.86,לא
+L2038,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,13.59,לא
+L2038,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,women w.c,13.59,לא
+L2038,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,13.59,לא
+L2039,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity shaft,5.07,כן
+L2039,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,5.07,כן
+L2041,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity shaft,5.16,כן
+L2041,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,5.16,כן
+L2043,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,LSS/FMS room,8.19,לא
+L2043,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,06-May-25,LSS/FMS room,8.19,לא
+L2043,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,LSS/FMS room,8.19,לא
+L2044,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,32.35,כן
+L2044,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,elevators Lobby,32.35,כן
+L2044,Mechanical Equipment,AW 800(right),AW 800,1,06-May-25,elevators Lobby,32.35,כן
+L2045,Electrical Fixtures,BOX D,TV,1,10-May-25,corridor,17.9,כן
+L2045,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,corridor,17.9,כן
+L2046,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,10-May-25,LSS shaft,0.9,כן
+L2050,Electrical Fixtures,Frame_Socket,Type 2,1,10-May-25,HSSD,1,כן
+L2055,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,10-May-25,women w.c,19.84,כן
+L2055,Electrical Fixtures,Frame_Socket,Type 2,5,10-May-25,women w.c,19.84,כן
+L2055,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,women w.c,19.84,כן
+L2056,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,10-May-25,men w.c,20.93,כן
+L2056,Electrical Fixtures,Frame_Socket,Type 2,4,10-May-25,men w.c,20.93,כן
+L2056,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,men w.c,20.93,כן
+L2057,Electrical Fixtures,M_Junction Boxes - W,W,1,10-May-25,cleaning room,8.47,כן
+L2057,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,10-May-25,cleaning room,8.47,כן
+L2059,Electrical Fixtures,Frame_Socket,Normal x2,1,10-May-25,restaurant exhaust  shaft,7.47,לא
+L2060,Electrical Fixtures,Frame_Socket,Normal x2,1,10-May-25,room 2,12.74,לא
+L2060,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,10-May-25,room 2,12.74,לא
+L2064,Electrical Fixtures,Frame_Socket,Type 1,1,10-May-25,shelter,64.67,כן
+L2064,Electrical Fixtures,Frame_Socket,Type 2,1,10-May-25,shelter,64.67,כן
+L2064,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,2,10-May-25,shelter,64.67,כן
+L2064,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,shelter,64.67,כן
+L2064,Mechanical Equipment,AWSQ 2000(right),AWSQ 2000,1,10-May-25,shelter,64.67,כן
+L2065,Electrical Fixtures,Frame_Socket,FOR LSS UPS,2,10-May-25,LSS/FMS room,14.37,לא
+L2065,Electrical Fixtures,Frame_Socket,Normal x2,1,10-May-25,LSS/FMS room,14.37,לא
+L2065,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,10-May-25,LSS/FMS room,14.37,לא
+L2065,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,10-May-25,LSS/FMS room,14.37,לא
+L2067,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,10-May-25,Systems room,4.71,לא
+L2076,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,10-May-25,smoke lobby,12.33,לא
+L2077,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,elevators Lobby,36.82,כן
+L2078,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,corridor,20.34,כן
+L2079,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,10-May-25,it /security room,32.85,לא
+L2079,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,10-May-25,it /security room,32.85,לא
+L2079,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,10-May-25,it /security room,32.85,לא
+L2079,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,it /security room,32.85,לא
+L2079,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,10-May-25,it /security room,32.85,לא
+L2080,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 UPS,1,10-May-25,electricity cabinet,2.56,כן
+L2080,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,10-May-25,electricity cabinet,2.56,כן
+L2081,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,10-May-25,electricity cabinet,7.61,לא
+L2081,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,10-May-25,electricity cabinet,7.61,לא
+L2081,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,10-May-25,electricity cabinet,7.61,לא
+L2085,Electrical Fixtures,M_Junction Boxes - W,W,1,10-May-25,cleaning room,6.41,כן
+L2087,Mechanical Equipment,AWV 2500,AWV 2500,1,10-May-25,OFFICES,102.28,לא
+L2089,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,10-May-25,corridor,28.76,לא
+L2089,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,corridor,28.76,לא
+L2090,Electrical Equipment,E_Wall Junction Box_MEPcontent_ABB_KNX Box_INT-EN_Shared,6131_38-183-500,5,10-May-25,OFFICES,4338.74,לא
+L2090,Electrical Fixtures,Detector Presence,Presence WC LM detector Mov,5,10-May-25,OFFICES,4338.74,לא
+L2090,Electrical Fixtures,Frame_Socket,Normal x2,24,10-May-25,OFFICES,4338.74,לא
+L2090,Electrical Fixtures,Frame_Socket,Type 1,577,10-May-25,OFFICES,4338.74,לא
+L2090,Electrical Fixtures,Frame_Socket,Type 2,82,10-May-25,OFFICES,4338.74,לא
+L2090,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,28,10-May-25,OFFICES,4338.74,לא
+L2090,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),131,10-May-25,OFFICES,4338.74,לא
+L2095,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,10-May-25,HSSD,0.65,כן
+L2099,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,10-May-25,corridor,21.2,כן
+L2099,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,10-May-25,corridor,21.2,כן
+L2100,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,10-May-25,corridor,19.8,כן
+L2100,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,corridor,19.8,כן
+L2100,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,10-May-25,corridor,19.8,כן
+L2102,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,10-May-25,corridor,12.91,לא
+L2103,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,10-May-25,corridor,19.91,לא
+L2104,Electrical Fixtures,Frame_Socket,Normal x2,3,10-May-25,CARDO,2057.84,כן
+L2104,Electrical Fixtures,Frame_Socket,Type 2,2,10-May-25,CARDO,2057.84,כן
+L2104,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,7,10-May-25,CARDO,2057.84,כן
+L2104,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),22,10-May-25,CARDO,2057.84,כן
+L3001,Lighting Fixtures,60x60 PANTALED,42W 4000K 24h,7,22-May-25,MEETING ROOM,31.19,כן
+L3001,Lighting Fixtures,Lighting Pendant  Fritz Hansen,Caravaggio,2,22-May-25,MEETING ROOM,31.19,כן
+L3002,Electrical Fixtures,Frame_Socket,1 AC,2,06-May-25,shelter,51.67,לא
+L3002,Electrical Fixtures,Frame_Socket,Normal x1,2,06-May-25,shelter,51.67,לא
+L3002,Electrical Fixtures,Frame_Socket,Type 2,4,06-May-25,shelter,51.67,לא
+L3002,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,shelter,51.67,לא
+L3002,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,shelter,51.67,לא
+L3002,Mechanical Equipment,AWSQ 1000(right),AWSQ 1000,1,06-May-25,shelter,51.67,לא
+L3002,Mechanical Equipment,AWSQ 1500(right),AWSQ 1500,1,06-May-25,shelter,51.67,לא
+L3003,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,13.49,כן
+L3003,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,men w.c,13.49,כן
+L3003,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,13.49,כן
+L3004,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,plumbing shaft,8.19,כן
+L3006,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,32.18,לא
+L3006,Mechanical Equipment,AW 800(right),AW 800,1,06-May-25,elevators Lobby,32.18,לא
+L3007,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K 24h,1,06-May-25,passengers elevators,14.82,כן
+L3008,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,32.4,כן
+L3008,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.4,כן
+L3008,Electrical Fixtures,Frame_Socket,Gen,2,06-May-25,it /security room,32.4,כן
+L3008,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.4,כן
+L3008,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L3008,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L3008,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.4,כן
+L3008,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,10,06-May-25,it /security room,32.4,כן
+L3008,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.4,כן
+L3009,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,32.35,לא
+L3009,Mechanical Equipment,AW 800(right),AW 800,1,06-May-25,elevators Lobby,32.35,לא
+L3010,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,service zone (fire),9.86,לא
+L3010,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,service zone (fire),9.86,לא
+L3013,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,13.59,לא
+L3013,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,women w.c,13.59,לא
+L3013,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,13.59,לא
+L3014,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity shaft,3.08,כן
+L3014,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,3.08,כן
+L3017,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,LSS/FMS room,8.19,לא
+L3017,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,LSS/FMS room,8.19,לא
+L3017,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,LSS/FMS room,8.19,לא
+L3018,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity shaft,4.41,לא
+L3018,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,4.41,לא
+L3024,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,LSS shaft,0.9,לא
+L3025,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,6.41,לא
+L3025,Mechanical Equipment,AW 450(right),AW 450,1,06-May-25,cleaning room,6.41,לא
+L3028,Electrical Fixtures,Frame_Socket,1 AC,2,06-May-25,shelter,51.68,כן
+L3028,Electrical Fixtures,Frame_Socket,Type 2,4,06-May-25,shelter,51.68,כן
+L3028,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,shelter,51.68,כן
+L3028,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,shelter,51.68,כן
+L3028,Mechanical Equipment,AWSQ 1000(right),AWSQ 1000,1,06-May-25,shelter,51.68,כן
+L3028,Mechanical Equipment,AWSQ 1500(right),AWSQ 1500,1,06-May-25,shelter,51.68,כן
+L3029,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,13.49,לא
+L3029,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,men w.c,13.49,לא
+L3029,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,13.49,לא
+L3030,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,06-May-25,plumbing shaft,8.19,כן
+L3033,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,32.4,כן
+L3033,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.4,כן
+L3033,Electrical Fixtures,Frame_Socket,Gen,2,06-May-25,it /security room,32.4,כן
+L3033,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.4,כן
+L3033,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L3033,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L3033,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.4,כן
+L3033,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.4,כן
+L3033,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.4,כן
+L3034,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,service zone (fire),9.86,לא
+L3034,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,service zone (fire),9.86,לא
+L3038,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,13.59,כן
+L3038,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,women w.c,13.59,כן
+L3038,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,13.59,כן
+L3039,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity shaft,3.08,כן
+L3039,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,3.08,כן
+L3041,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity shaft,5.16,כן
+L3041,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,5.16,כן
+L3044,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,LSS/FMS room,8.19,לא
+L3044,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,06-May-25,LSS/FMS room,8.19,לא
+L3044,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,LSS/FMS room,8.19,לא
+L3045,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,18,לא
+L3046,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,6.41,לא
+L3046,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,cleaning room,6.41,לא
+L3046,Mechanical Equipment,AW 450(right),AW 450,1,06-May-25,cleaning room,6.41,לא
+L3047,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,LSS shaft,0.9,לא
+L3053,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,HSSD,1,לא
+L3055,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,restaurant exhaust  shaft,7.47,לא
+L3055,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,restaurant exhaust  shaft,7.47,לא
+L3056,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,3,06-May-25,room 2,12.74,כן
+L3059,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,plumbing shaft,6.68,כן
+L3060,Electrical Fixtures,Frame_Socket,1 AC,1,06-May-25,shelter,64.66,לא
+L3060,Electrical Fixtures,Frame_Socket,Type 2,4,06-May-25,shelter,64.66,לא
+L3060,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,2,06-May-25,shelter,64.66,לא
+L3060,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,shelter,64.66,לא
+L3060,Mechanical Equipment,AWSQ 2000(right),AWSQ 2000,1,06-May-25,shelter,64.66,לא
+L3062,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,Systems room,4.71,כן
+L3065,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,06-May-25,it /security room,32.85,כן
+L3065,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.85,כן
+L3065,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.85,כן
+L3065,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.85,כן
+L3065,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.85,כן
+L3065,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.85,כן
+L3069,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,elevators Lobby,37.26,כן
+L3070,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,smoke lobby,12.33,לא
+L3070,Lighting Fixtures,M_Recessed Direct-Indirect Light - Asymmetrical,Topaz 1200mm 24h,1,06-May-25,smoke lobby,12.33,לא
+L3072,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,19.84,לא
+L3072,Electrical Fixtures,Frame_Socket,Type 2,5,06-May-25,women w.c,19.84,לא
+L3072,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,19.84,לא
+L3073,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,20.89,לא
+L3073,Electrical Fixtures,Frame_Socket,Type 2,4,06-May-25,men w.c,20.89,לא
+L3073,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,20.89,לא
+L3074,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,8.51,לא
+L3078,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 UPS,1,06-May-25,electricity cabinet,2.56,לא
+L3078,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity cabinet,2.56,לא
+L3079,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity cabinet,7.62,לא
+L3079,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity cabinet,7.62,לא
+L3079,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,electricity cabinet,7.62,לא
+L3081,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,2,06-May-25,corridor,29.19,כן
+L3081,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,29.19,כן
+L3082,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,3,06-May-25,LSS/FMS room,14.37,לא
+L3083,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,17.81,כן
+L3083,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,corridor,17.81,כן
+L3087,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,fly box,13.89,כן
+L3088,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,fly box,13.9,לא
+L3089,Electrical Fixtures,Frame_Socket,Type 2,1,06-May-25,fly box,13.75,לא
+L3090,Electrical Fixtures,Frame_Socket,Type 2,1,06-May-25,fly box,13.8,לא
+L3091,Electrical Fixtures,Frame_Socket,Normal x2,23,06-May-25,OFFICES,4650.08,כן
+L3091,Electrical Fixtures,Frame_Socket,Type 1,529,06-May-25,OFFICES,4650.08,כן
+L3091,Electrical Fixtures,Frame_Socket,Type 2,80,06-May-25,OFFICES,4650.08,כן
+L3091,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,34,06-May-25,OFFICES,4650.08,כן
+L3091,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),150,06-May-25,OFFICES,4650.08,כן
+L3096,Electrical Fixtures,Frame_Socket,FOR LSS UPS,2,06-May-25,HSSD,0.65,לא
+L3104,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,corridor,22.23,כן
+L3104,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,corridor,22.23,כן
+L3105,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,corridor,19.1,לא
+L3105,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,19.1,לא
+L3106,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,corridor,12.96,כן
+L3107,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,corridor,12.9,לא
+L3108,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,19.91,לא
+L3109,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,corridor,25.45,כן
+L4002,Electrical Fixtures,Frame_Socket,1 AC,3,06-May-25,shelter,51.88,כן
+L4002,Electrical Fixtures,Frame_Socket,Type 2,5,06-May-25,shelter,51.88,כן
+L4002,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,shelter,51.88,כן
+L4002,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,shelter,51.88,כן
+L4002,Mechanical Equipment,AWSQ 1200(right),AWSQ 1200,1,06-May-25,shelter,51.88,כן
+L4002,Mechanical Equipment,AWSQ 700(right),AWSQ 700,1,06-May-25,shelter,51.88,כן
+L4003,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,13.49,לא
+L4003,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,men w.c,13.49,לא
+L4003,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,13.49,לא
+L4004,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,plumbing shaft,8.19,לא
+L4004,Lighting Fixtures,M_Recessed Direct-Indirect Light - Asymmetrical,Topaz 1200mm,2,06-May-25,plumbing shaft,8.19,לא
+L4006,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,34.09,לא
+L4006,Mechanical Equipment,AW 800(right),AW 800,1,06-May-25,elevators Lobby,34.09,לא
+L4008,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,32.4,כן
+L4008,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.4,כן
+L4008,Electrical Fixtures,Frame_Socket,1 AC GEN,2,06-May-25,it /security room,32.4,כן
+L4008,Electrical Fixtures,Frame_Socket,Gen,2,06-May-25,it /security room,32.4,כן
+L4008,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.4,כן
+L4008,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L4008,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L4008,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.4,כן
+L4008,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.4,כן
+L4008,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.4,כן
+L4009,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,service zone (fire),9.86,כן
+L4009,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,service zone (fire),9.86,כן
+L4010,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,6.41,לא
+L4010,Lighting Fixtures,M_Recessed Direct-Indirect Light - Asymmetrical,Topaz 1200mm,1,06-May-25,cleaning room,6.41,לא
+L4010,Mechanical Equipment,AW 450(right),AW 450,1,06-May-25,cleaning room,6.41,לא
+L4012,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,13.59,לא
+L4012,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,women w.c,13.59,לא
+L4012,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,13.59,לא
+L4013,Electrical Equipment,M_Disconnect Switches,1000A,1,06-May-25,electricity shaft,3.08,כן
+L4013,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity shaft,3.08,כן
+L4013,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,3.08,כן
+L4016,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,LSS/FMS room,8.19,לא
+L4016,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,LSS/FMS room,8.19,לא
+L4016,Lighting Fixtures,M_Recessed Direct-Indirect Light - Asymmetrical,Topaz 1200mm,2,06-May-25,LSS/FMS room,8.19,לא
+L4016,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,LSS/FMS room,8.19,לא
+L4017,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,17.06,לא
+L4018,Electrical Equipment,M_Disconnect Switches,1000A,1,06-May-25,electricity shaft,4.41,כן
+L4018,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity shaft,4.41,כן
+L4018,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,4.41,כן
+L4024,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,LSS shaft,0.9,לא
+L4025,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,32.35,כן
+L4025,Mechanical Equipment,AW 800(right),AW 800,1,06-May-25,elevators Lobby,32.35,כן
+L4027,Electrical Fixtures,Frame_Socket,1 AC,3,06-May-25,shelter,51.68,לא
+L4027,Electrical Fixtures,Frame_Socket,Normal x2,2,06-May-25,shelter,51.68,לא
+L4027,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,shelter,51.68,לא
+L4027,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,shelter,51.68,לא
+L4027,Mechanical Equipment,AWSQ 1000(right),AWSQ 1000,1,06-May-25,shelter,51.68,לא
+L4027,Mechanical Equipment,AWSQ 700(right),AWSQ 700,1,06-May-25,shelter,51.68,לא
+L4028,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,13.49,לא
+L4028,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,men w.c,13.49,לא
+L4028,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,13.49,לא
+L4029,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,06-May-25,plumbing shaft,8.19,לא
+L4032,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,06-May-25,it /security room,32.4,כן
+L4032,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.4,כן
+L4032,Electrical Fixtures,Frame_Socket,1 AC GEN,2,06-May-25,it /security room,32.4,כן
+L4032,Electrical Fixtures,Frame_Socket,Gen,2,06-May-25,it /security room,32.4,כן
+L4032,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.4,כן
+L4032,Electrical Fixtures,Socket_Cee_R19,GEN CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L4032,Electrical Fixtures,Socket_Cee_R19,UPS CEE_1x16A_1Ph,6,06-May-25,it /security room,32.4,כן
+L4032,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.4,כן
+L4032,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.4,כן
+L4032,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.4,כן
+L4033,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,service zone (fire),9.86,לא
+L4033,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,service zone (fire),9.86,לא
+L4037,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,13.59,לא
+L4037,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,women w.c,13.59,לא
+L4037,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,13.59,לא
+L4038,Electrical Equipment,M_Disconnect Switches,1000A,1,06-May-25,electricity shaft,3.08,כן
+L4038,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity shaft,3.08,כן
+L4038,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,3.08,כן
+L4040,Electrical Equipment,M_Disconnect Switches,1000A,1,06-May-25,electricity shaft,5.16,לא
+L4040,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity shaft,5.16,לא
+L4040,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity shaft,5.16,לא
+L4044,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,LSS/FMS room,8.19,כן
+L4044,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,06-May-25,LSS/FMS room,8.19,כן
+L4044,Mechanical Equipment,AWSQ 450(right),AWSQ 450,1,06-May-25,LSS/FMS room,8.19,כן
+L4045,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,17.81,לא
+L4046,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,6.41,לא
+L4046,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,cleaning room,6.41,לא
+L4046,Mechanical Equipment,AW 450(right),AW 450,1,06-May-25,cleaning room,6.41,לא
+L4047,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,LSS shaft,0.9,כן
+L4052,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,HSSD,1,לא
+L4055,Electrical Fixtures,Frame_Socket,Normal x2,1,06-May-25,restaurant exhaust  shaft,7.47,כן
+L4055,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,restaurant exhaust  shaft,7.47,כן
+L4056,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,4,06-May-25,room 2,12.74,לא
+L4059,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,plumbing shaft,6.68,לא
+L4060,Electrical Fixtures,Frame_Socket,1 AC,1,06-May-25,shelter,64.66,כן
+L4060,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,shelter,64.66,כן
+L4060,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,2,06-May-25,shelter,64.66,כן
+L4060,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,shelter,64.66,כן
+L4060,Mechanical Equipment,AWSQ 2000(right),AWSQ 2000,1,06-May-25,shelter,64.66,כן
+L4062,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,06-May-25,Systems room,4.71,כן
+L4065,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,06-May-25,it /security room,32.85,לא
+L4065,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,06-May-25,it /security room,32.85,לא
+L4065,Electrical Fixtures,Frame_Socket,1 AC GEN,2,06-May-25,it /security room,32.85,לא
+L4065,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,it /security room,32.85,לא
+L4065,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,it /security room,32.85,לא
+L4065,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,06-May-25,it /security room,32.85,לא
+L4065,Mechanical Equipment,AWV 1200,AWV 1200,2,06-May-25,it /security room,32.85,לא
+L4069,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,smoke lobby,12.33,כן
+L4071,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,women w.c,19.84,לא
+L4071,Electrical Fixtures,Frame_Socket,Type 2,5,06-May-25,women w.c,19.84,לא
+L4071,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,women w.c,19.84,לא
+L4072,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,06-May-25,men w.c,20.89,כן
+L4072,Electrical Fixtures,Frame_Socket,Type 2,4,06-May-25,men w.c,20.89,כן
+L4072,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,men w.c,20.89,כן
+L4073,Electrical Fixtures,M_Junction Boxes - W,W,1,06-May-25,cleaning room,8.51,לא
+L4077,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 UPS,1,06-May-25,electricity cabinet,2.56,לא
+L4077,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,06-May-25,electricity cabinet,2.56,לא
+L4078,Electrical Equipment,M_Disconnect Switches,1000A,2,06-May-25,electricity cabinet,7.6,לא
+L4078,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,06-May-25,electricity cabinet,7.6,לא
+L4078,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,06-May-25,electricity cabinet,7.6,לא
+L4078,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,06-May-25,electricity cabinet,7.6,לא
+L4080,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,LSS/FMS room,14.37,לא
+L4080,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,3,06-May-25,LSS/FMS room,14.37,לא
+L4081,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,elevators Lobby,38.2,כן
+L4082,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,corridor,28.57,כן
+L4082,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,corridor,28.57,כן
+L4085,Electrical Fixtures,Frame_Socket,Type 2,1,06-May-25,recycling station,2.01,לא
+L4088,Electrical Fixtures,Frame_Socket,Type 2,3,06-May-25,fly box,13.78,לא
+L4088,Electrical Fixtures,M4,D-18 (Conference Rooms)-M4,1,06-May-25,fly box,13.78,לא
+L4090,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,fly box,13.78,לא
+L4095,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,06-May-25,HSSD,0.65,כן
+L4100,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,corridor,22.23,לא
+L4100,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,corridor,22.23,לא
+L4101,Lighting Fixtures,EXIT Base_Ceiling_Wall_R18,Exit,1,06-May-25,corridor,19.1,לא
+L4101,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,19.1,לא
+L4102,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,corridor,12.75,כן
+L4103,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,06-May-25,corridor,12.98,כן
+L4104,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,06-May-25,corridor,20.03,כן
+L4105,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,06-May-25,corridor,25.45,לא
+L4112,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,BALCONY,11.38,לא
+L4113,Electrical Fixtures,Frame_Socket,Type 2,2,06-May-25,fly box,14,כן
+L5002,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,18-May-25,shelter,51.68,לא
+L5002,Mechanical Equipment,AWSQ 1500,AWSQ 1500,1,18-May-25,shelter,51.68,לא
+L5003,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,men w.c,13.49,לא
+L5003,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,men w.c,13.49,לא
+L5005,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K 24h,1,18-May-25,passengers elevators,14.82,כן
+L5006,Mechanical Equipment,AW 800,AW 800,1,18-May-25,elevators Lobby,32.56,לא
+L5008,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,18-May-25,it /security room,32.4,לא
+L5008,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,it /security room,32.4,לא
+L5008,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,it /security room,32.4,לא
+L5009,Mechanical Equipment,AWSQ 450,AWSQ 450,1,18-May-25,service zone (fire),9.85,לא
+L5012,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,women w.c,13.59,כן
+L5012,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,women w.c,13.59,כן
+L5013,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,18-May-25,electricity shaft,3.08,לא
+L5013,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,3.08,לא
+L5017,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,18-May-25,electricity shaft,4.41,כן
+L5017,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,4.41,כן
+L5023,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,LSS shaft,0.9,כן
+L5025,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K 24h,1,18-May-25,elevators Lobby,32.35,כן
+L5025,Mechanical Equipment,AW 800,AW 800,1,18-May-25,elevators Lobby,32.35,כן
+L5027,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,18-May-25,shelter,51.68,כן
+L5027,Mechanical Equipment,AWSQ 1500,AWSQ 1500,1,18-May-25,shelter,51.68,כן
+L5028,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,men w.c,13.49,כן
+L5028,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,men w.c,13.49,כן
+L5032,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,18-May-25,it /security room,32.4,לא
+L5032,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,it /security room,32.4,לא
+L5032,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,it /security room,32.4,לא
+L5033,Mechanical Equipment,AWSQ 450,AWSQ 450,1,18-May-25,service zone (fire),9.86,כן
+L5037,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,women w.c,13.59,לא
+L5037,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,women w.c,13.59,לא
+L5038,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,18-May-25,electricity room,3.08,לא
+L5038,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity room,3.08,לא
+L5040,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,18-May-25,electricity shaft,5.13,כן
+L5040,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,5.13,כן
+L5046,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,LSS shaft,0.9,לא
+L5052,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,HSSD,1,כן
+L5059,Mechanical Equipment,AWSQ 2000,AWSQ 2000,1,18-May-25,shelter,64.66,לא
+L5064,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,18-May-25,it /security room,32.85,כן
+L5064,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,it /security room,32.85,כן
+L5064,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,it /security room,32.85,כן
+L5070,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,women w.c,19.84,לא
+L5070,Electrical Fixtures,Frame_Socket,Type 2,5,18-May-25,women w.c,19.84,לא
+L5071,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,men w.c,20.89,לא
+L5071,Electrical Fixtures,Frame_Socket,Type 2,4,18-May-25,men w.c,20.89,לא
+L5076,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 UPS,1,18-May-25,electricity cabinet,2.56,לא
+L5076,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity cabinet,2.56,לא
+L5077,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,18-May-25,electricity cabinet,7.6,לא
+L5077,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,18-May-25,electricity cabinet,7.6,לא
+L5077,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,electricity cabinet,7.6,לא
+L5080,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,LSS/FMS room,14.37,לא
+L5094,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,HSSD,0.65,כן
+L6011,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,18-May-25,Systems room,4.71,לא
+L6013,Lighting Fixtures,M_Recessed Direct-Indirect Light - Asymmetrical,Topaz 1200mm 24h,1,18-May-25,service zone (fire),9.86,לא
+L6013,Mechanical Equipment,AWSQ 450,AWSQ 450,1,18-May-25,service zone (fire),9.86,לא
+L6017,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,LSS shaft,0.9,לא
+L6018,Mechanical Equipment,AWSQ 450,AWSQ 450,1,18-May-25,service zone (fire),9.86,כן
+L6021,Electrical Fixtures,M_Junction Boxes - W,W,1,18-May-25,cleaning room,6.41,לא
+L6021,Mechanical Equipment,AW 450,AW 450,1,18-May-25,cleaning room,6.41,לא
+L6022,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,LSS shaft,0.9,לא
+L6024,Electrical Fixtures,Frame_Socket,Normal x2,1,18-May-25,shelter,64.66,לא
+L6024,Mechanical Equipment,AWSQ 2000,AWSQ 2000,1,18-May-25,shelter,64.66,לא
+L6025,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,men w.c,20.89,כן
+L6025,Electrical Fixtures,Frame_Socket,Type 2,4,18-May-25,men w.c,20.89,כן
+L6026,Electrical Fixtures,Frame_Socket,Normal x2,5,18-May-25,OFFICES,1144.04,כן
+L6026,Electrical Fixtures,Frame_Socket,Type 1,93,18-May-25,OFFICES,1144.04,כן
+L6027,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,1,18-May-25,it /security room,32.85,כן
+L6027,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,it /security room,32.85,כן
+L6027,Electrical Fixtures,Frame_Socket,1 AC GEN,2,18-May-25,it /security room,32.85,כן
+L6027,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,it /security room,32.85,כן
+L6027,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),1,18-May-25,it /security room,32.85,כן
+L6027,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,18-May-25,it /security room,32.85,כן
+L6027,Mechanical Equipment,AWV 1200,AWV 1200,2,18-May-25,it /security room,32.85,כן
+L6029,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x160x210 UPS,1,18-May-25,electricity cabinet,2.55,לא
+L6029,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity cabinet,2.55,לא
+L6030,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,18-May-25,electricity cabinet,7.6,כן
+L6030,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,18-May-25,electricity cabinet,7.6,כן
+L6030,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,electricity cabinet,7.6,כן
+L6034,Mechanical Equipment,AWSQ 1000,AWSQ 1000,1,18-May-25,shelter,51.67,לא
+L6034,Mechanical Equipment,AWSQ 1500,AWSQ 1500,1,18-May-25,shelter,51.67,לא
+L6035,Electrical Fixtures,Frame_Socket,FOR LSS UPS,1,18-May-25,HSSD,1,לא
+L6044,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,women w.c,19.84,כן
+L6044,Electrical Fixtures,Frame_Socket,Type 2,5,18-May-25,women w.c,19.84,כן
+L6045,Electrical Fixtures,M_Junction Boxes - W,W,1,18-May-25,cleaning room,8.51,לא
+L6045,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,1,18-May-25,cleaning room,8.51,לא
+L6048,Electrical Fixtures,M_Junction Boxes - W,W,1,18-May-25,cleaning room,6.41,לא
+L6053,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,18-May-25,LSS/FMS room,8.19,כן
+L6055,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,men w.c,13.49,כן
+L6055,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,men w.c,13.49,כן
+L6057,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,women w.c,13.59,לא
+L6057,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,women w.c,13.59,לא
+L6059,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,men w.c,13.49,כן
+L6059,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,men w.c,13.49,כן
+L6061,Electrical Fixtures,Frame_Socket,Normal x1 WP,1,18-May-25,women w.c,13.59,לא
+L6061,Electrical Fixtures,Frame_Socket,Type 2,3,18-May-25,women w.c,13.59,לא
+L6062,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,18-May-25,it /security room,32.4,לא
+L6062,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,it /security room,32.4,לא
+L6062,Electrical Fixtures,Frame_Socket,1 AC GEN,2,18-May-25,it /security room,32.4,לא
+L6062,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,it /security room,32.4,לא
+L6062,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,18-May-25,it /security room,32.4,לא
+L6062,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,10,18-May-25,it /security room,32.4,לא
+L6062,Mechanical Equipment,AWV 1200,AWV 1200,2,18-May-25,it /security room,32.4,לא
+L6064,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,18-May-25,electricity shaft,5.16,כן
+L6064,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,5.16,כן
+L6065,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,18-May-25,electricity shaft,3.08,כן
+L6065,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,3.08,כן
+L6066,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,18-May-25,LSS/FMS room,8.19,כן
+L6068,Electrical Fixtures,Frame_Socket,FOR LSS UPS,2,18-May-25,LSS/FMS room,14.37,כן
+L6068,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),3,18-May-25,LSS/FMS room,14.37,כן
+L6068,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,18-May-25,LSS/FMS room,14.37,כן
+L6073,Electrical Equipment,M_Circuit Breaker Switchboard,100mmx46mm,2,18-May-25,it /security room,32.4,כן
+L6073,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,it /security room,32.4,כן
+L6073,Electrical Fixtures,Frame_Socket,1 AC GEN,2,18-May-25,it /security room,32.4,כן
+L6073,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,2,18-May-25,it /security room,32.4,כן
+L6073,Lighting Fixtures,Lighting_Emergency-Security_Daisalux-Lens-L_CD-FR,Emergency LENS LF3 (CD),2,18-May-25,it /security room,32.4,כן
+L6073,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,9,18-May-25,it /security room,32.4,כן
+L6073,Mechanical Equipment,AWV 1200,AWV 1200,2,18-May-25,it /security room,32.4,כן
+L6074,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210  GEN,1,18-May-25,electricity shaft,3.08,לא
+L6074,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,3.08,לא
+L6076,Electrical Equipment,Yani_Circuit breaker_SwitchBoard,60x240x210,1,18-May-25,electricity shaft,4.41,לא
+L6076,Electrical Fixtures,SOCKETS1,x×©×§×¢ ×ª×§×©×•×¨×ª 2,1,18-May-25,electricity shaft,4.41,לא
+L6085,Electrical Equipment,M_Transformer Switchboard,100x80cm,4,18-May-25,SYSTEMS,1394.64,כן
+L6085,Electrical Equipment,M_Transformer Switchboard,160x80cm,2,18-May-25,SYSTEMS,1394.64,כן
+L6085,Electrical Fixtures,M_Junction Boxes - W,W,1,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,Chiller_hp-404-504,HP tower,4,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,Cooling Tower_300 Tons,Cooling Tower,4,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,Electrical cabinet,Electrical cabinet,3,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,Fan-Stand_Alone-Twin_City_Fan_,Fan 122 CLII,1,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,M_Mechanical Equipment_Inert Base,766Ñ…766,4,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,M_Mechanical Equipment_Inert Base,80x110,1,18-May-25,SYSTEMS,1394.64,כן
+L6085,Mechanical Equipment,M_Mechanical Equipment_Inert Base,830Ñ…40,16,18-May-25,SYSTEMS,1394.64,כן
+L6086,Electrical Fixtures,M_Junction Boxes - W,W,4,18-May-25,SPORT,773.15,לא
+L6088,Electrical Fixtures,Frame_Socket,Normal x2,1,18-May-25,cafe area indoor,199.99,כן
+L6095,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K,2,18-May-25,room 2,12.74,כן
+L6107,Electrical Equipment,M_Transformer Switchboard,400mmx250mmx600h,2,18-May-25,electricity shaft,2.04,לא
+L7007,Lighting Fixtures,×¡×™ ×œ×“ 6600,42W 4000K 24h,1,18-May-25,electricity shaft,14.82,כן
