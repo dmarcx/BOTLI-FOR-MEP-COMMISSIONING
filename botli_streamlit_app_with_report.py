@@ -115,7 +115,7 @@ if room:
 
                 if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
                     if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
-                        st.markdown("📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס\"מ. ודא שאין אור חיצוני שמפריע.")
+        st.markdown("""📏 **הנחיה:** מדוד את רמת ההארה במרכז החדר בגובה 80 ס"מ. ודא שאין אור חיצוני שמפריע.""")
                         measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
                         if measured:
                             lux_result = evaluate_lux(room_type, measured)
@@ -125,12 +125,12 @@ if room:
                             for s in sources:
                                 st.write(f"🔌 {s}")
                             if st.checkbox("האם השילוט בפועל תואם לתכנון?"):
-                                if st.checkbox("""האם האור כבה לאחר הפעלת מאמ"ת?"""):
+                                if st.checkbox("האם האור כבה לאחר הפעלת מאמ"ת?"):
                                     st.success("בדיקת התאורה הסתיימה בהצלחה.")
-                                    if st.button("""📄 הפק דו"ח מסירה"""):
+                                    if st.button("📄 הפק דו"ח מסירה"):
                                         file = generate_report(room, room_type, planned, today, status, lux_result, sources)
                                         with open(file, "rb") as f:
-                                            st.download_button("""📥 הורד את הדו"ח""", data=f, file_name=file)
+                                            st.download_button("📥 הורד את הדו"ח", data=f, file_name=file)
                                 else:
                                     st.warning("נדרש לאמת את פעולת מאמ"ת.")
                             else:
