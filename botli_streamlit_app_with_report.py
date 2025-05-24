@@ -14,6 +14,7 @@ def load_data():
 
 above_ground, below_ground = load_data()
 
+
 def get_room_type(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
@@ -36,12 +37,14 @@ def get_room_type(room):
 
     return room_type, None if room_type else "Room type missing"
 
+
 def check_documents(room):
     df = above_ground if room.startswith("L") else below_ground
     row = df[df["Room Number"].str.upper().str.strip() == room]
     if row.empty:
         return None
     return row.iloc[0].get("מסמכים סופקו", "").strip() == "כן"
+
 
 def get_schedule_date(room):
     df = above_ground if room.startswith("L") else below_ground
@@ -57,10 +60,11 @@ def get_schedule_date(room):
     if delta == 0:
         status = "במועד"
     elif delta > 0:
-        status = f"מאוחרת ב־{delta} ימים"
+        status = f"מאוחרת ב‏{delta} ימים"
     else:
-        status = f"מוקדמת ב־{abs(delta)} ימים"
+        status = f"מוקדמת ב‏{abs(delta)} ימים"
     return planned_date, today, status
+
 
 def evaluate_lux(room_type, measured_lux):
     lux_table = {
@@ -89,6 +93,7 @@ def evaluate_lux(room_type, measured_lux):
     else:
         return "רמת ההארה אינה תקינה – נדרש תיקון או אישור המתכנן."
 
+
 def get_power_sources(room):
     if room.startswith("L"):
         file_name = "SLD1-L3-EL-001.pdf"
@@ -102,13 +107,21 @@ def get_power_sources(room):
     text = "".join([page.get_text() for page in doc])
     return list(set(line.strip() for line in text.splitlines() if "EP-" in line and line.strip().startswith("EP-")))
 
+
 def get_lighting_fixtures(room):
     df = above_ground if room.startswith("L") else below_ground
-    row = df[df["Room Number"].str.upper().str.strip() == room]
-    if row.empty:
-        return "אין נתונים"
-    fixtures = row.iloc[0].get("Lighting Fixtures", "לא צויין")
-    return fixtures
+    rows = df[df["Room Number"].str.upper().str.strip() == room]
+    if rows.empty:
+        return ["לא נמצאו נתונים"]
+    fixtures = []
+    for _, row in rows.iterrows():
+        type_c = str(row.get("Type", "")).strip()
+        model_d = str(row.get("Model", "")).strip()
+        quantity_e = str(row.get("Quantity", "")).strip()
+        if type_c or model_d:
+            fixtures.append(f"{type_c} {model_d} – כמות: {quantity_e}")
+    return fixtures if fixtures else ["לא צויין"]
+
 
 def generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks):
     wb = load_workbook("דוח מסירה.xlsx")
@@ -128,98 +141,3 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     file_name = f"report_{room}.xlsx"
     wb.save(file_name)
     return file_name
-
-# Streamlit UI
-st.title("BOTLI – בדיקת תאורה")
-
-room = st.text_input("הזן מספר חדר (לדוגמה L3001):")
-if room:
-    room = room.upper().strip()
-    if len(room) == 5 and room[0] in ["L", "P"] and room[1:].isdigit():
-        room_type, error = get_room_type(room)
-        if error:
-            st.error(error)
-        else:
-            st.success(f"הבדיקה מתבצעת על חדר מספר {room} מסוג {room_type}.")
-            if check_documents(room):
-                st.info("כל המסמכים הוגשו.")
-                planned, today, status = get_schedule_date(room)
-                st.write(f"התאריך המתוכנן הוא {planned}, היום {today} — הבדיקה {status}.")
-                if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
-                    if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
-                        participants = []
-                        remarks = []
-                        st.markdown("### 🧑‍🤝‍🧑 מי המשתתפים בבדיקה ומה תפקידם?")
-                        participants_text = st.text_area("אנא הזן רשימת משתתפים בפורמט שם – תפקיד, שורה לכל משתתף")
-                        if participants_text.strip():
-                            participants = [line.strip() for line in participants_text.splitlines() if line.strip()]
-                            more = st.radio("האם זו הרשימה המלאה?", ("כן", "לא"))
-                            while more == "לא":
-                                additional = st.text_area("הוסף משתתפים נוספים", key=f"more_{len(participants)}")
-                                if additional.strip():
-                                    participants += [line.strip() for line in additional.splitlines() if line.strip()]
-                                    more = st.radio("האם כעת זו הרשימה המלאה?", ("כן", "לא"), key=f"confirm_{len(participants)}")
-                        if not participants:
-                            st.warning("נדרשת רשימת משתתפים להמשך.")
-                            st.stop()
-
-                        st.markdown("### 💡 בדיקת גופי תאורה")
-                        fixtures = get_lighting_fixtures(room)
-                        st.info(f"גופי התאורה המתוכננים/המדווחים: {fixtures}")
-                        approved = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
-                        if approved == "לא":
-                            remarks.append(f"אי התאמה בכמות או סוג גופי התאורה: {fixtures}")
-
-                        measured = st.number_input("הזן את רמת ההארה שנמדדה (בלוקס):", min_value=0)
-                        if measured:
-                            lux_result = evaluate_lux(room_type, measured)
-                            st.info(lux_result)
-                            if "אינה תקינה" in lux_result:
-                                remarks.append(lux_result)
-
-                            dark_result = ""
-                            darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
-                            if darker_area == "כן":
-                                dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
-                                if dark_measure:
-                                    dark_result = evaluate_lux(room_type, dark_measure)
-                                    st.info("באזור החשוך: " + dark_result)
-                                    if "אינה תקינה" in dark_result:
-                                        remarks.append("באזור החשוך: " + dark_result)
-
-                        sources = get_power_sources(room)
-                        st.markdown("### ⚡ מקורות אספקה שנמצאו בתוכנית:")
-                        if sources:
-                            for s in sources:
-                                st.write(f"🔌 {s}")
-                        else:
-                            st.write("לא נמצאו מקורות אספקה.")
-
-                        signage_match = st.checkbox("האם השילוט בפועל תואם לתכנון?")
-                        if signage_match:
-                            st.success("השילוט תואם לתכנון.")
-                        else:
-                            warning = "נדרש לתקן את השילוט או לעדכן את התכנון."
-                            st.warning(warning)
-                            remarks.append(warning)
-
-                        breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ("כן", "לא"))
-                        if breaker_test == "כן":
-                            st.success("המאמת פועל כמצופה.")
-                        else:
-                            warning = "נדרש לאמת את פעולת המאמת."
-                            st.warning(warning)
-                            remarks.append(warning)
-
-                        if st.button("📄 הפק דו""ח מסירה"):
-                            file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks)
-                            with open(file, "rb") as f:
-                                st.download_button("📥 הורד את הדו""ח", data=f, file_name=file)
-                    else:
-                        st.warning("נדרש מד תאורה לביצוע הבדיקה.")
-                else:
-                    st.warning("לא ניתן להמשיך ללא אישור התקדמות.")
-            else:
-                st.error("נדרש אישור שכל המסמכים הוגשו. לא ניתן להמשיך.")
-    else:
-        st.error("מספר החדר אינו תקני. יש להזין קלט במבנה L1234 או P1234.")
