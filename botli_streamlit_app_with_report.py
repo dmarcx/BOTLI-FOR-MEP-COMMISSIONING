@@ -141,3 +141,13 @@ def generate_report(room, room_type, planned, today, status, lux_result, dark_re
     file_name = f"report_{room}.xlsx"
     wb.save(file_name)
     return file_name
+
+
+# Streamlit UI integration for fixture validation
+room = st.text_input("הזן מספר חדר")
+if room:
+    room = room.upper().strip()
+    fixtures = get_lighting_fixtures(room)
+    st.subheader("💡 בדיקת גופי תאורה")
+    st.info("\n".join(fixtures))
+    confirm = st.radio("האם אלו גופי התאורה והכמות הקיימים בפועל?", ("כן", "לא"))
