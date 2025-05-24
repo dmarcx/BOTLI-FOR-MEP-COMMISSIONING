@@ -148,8 +148,8 @@ if room:
             planned, today, status = get_schedule_date(room)
             st.info(f"📅 התאריך המתוכנן הוא {planned}, היום {today}, הבדיקה {status}.")
 
-            if st.checkbox("האם ניתן להתקדם לביצוע הבדיקה בפועל?"):
-                if st.checkbox("האם קיים מד תאורה זמין לביצוע הבדיקה?"):
+            if st.radio("האם ניתן להתקדם לביצוע הבדיקה בפועל?", ["כן", "לא"]) == "כן":
+                if st.radio("האם קיים מד תאורה זמין לביצוע הבדיקה?", ["כן", "לא"]) == "כן":
                     st.subheader("💡 בדיקת גופי תאורה")
                     fixtures = get_lighting_fixtures(room)
                     for fix in fixtures:
@@ -175,7 +175,7 @@ if room:
                         st.info(lux_result)
 
                         dark_result = ""
-                        darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ("לא", "כן"))
+                        darker_area = st.radio("האם קיימים אזורים חשוכים יותר בחדר?", ["לא", "כן"])
                         if darker_area == "כן":
                             dark_measure = st.number_input("הזן את רמת ההארה באזור החשוך (בלוקס):", min_value=0)
                             if dark_measure:
@@ -190,18 +190,18 @@ if room:
                         else:
                             st.write("לא נמצאו מקורות אספקה.")
 
-                        signage_match = st.checkbox("האם השילוט בפועל תואם לתכנון?")
-                        if not signage_match:
+                        signage_match = st.radio("האם השילוט בפועל תואם לתכנון?", ["כן", "לא"])
+                        if signage_match == "לא":
                             remarks.append("שילוט לא תואם – נדרש תיקון או עדכון תכנון.")
 
-                        breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ("כן", "לא"))
+                        breaker_test = st.radio("האם האור כבה לאחר הפלת המאמת?", ["כן", "לא"])
                         if breaker_test == "לא":
                             remarks.append("נדרש לאמת את פעולת המאמת – האור לא כבה לאחר הפלתו.")
 
-                        if st.button("📄 הפק דו""ח מסירה"):
+                        if st.button("📄 הפק דוח מסירה"):
                             file = generate_report(room, room_type, planned, today, status, lux_result, dark_result, sources, participants, remarks)
                             with open(file, "rb") as f:
-                                st.download_button("📥 הורד את הדו""ח", data=f, file_name=file)
+                                st.download_button("📥 הורד את הדוח", data=f, file_name=file)
                     else:
                         st.warning("נדרש להזין ערך מדוד כדי להמשיך.")
                 else:
